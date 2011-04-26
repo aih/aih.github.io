@@ -16,7 +16,7 @@ For example, this is a simple list:
 2.Second item
 3.Third item
 
-Emphasizing text is *easy*, as is using _italics_, though I'm not sure how to create bold text if I want to.
+Emphasizing text is **easy**, as is using _italics_, though I'm not sure how to create bold text if I want to.
 
 It is unclear how some features will be transformed, however...
 
