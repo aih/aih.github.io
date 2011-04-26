@@ -10,8 +10,8 @@ Welcome
 =======
 
 Blogs
-=====
+-------
 
 
 [Twitter](http://twitter.com/arihersh)
-====================================
+-------
