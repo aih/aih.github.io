@@ -21,16 +21,17 @@ Emphasizing text is *easy*, as is using _italics_, though I'm not sure how to cr
 It is unclear how some features will be transformed, however...
 
 This works to set the level of header:
-#First level
-##Second level
-#First again
-#Last item in the list
+# First level
+## Second level
+# First again
+# Last item in the list
 
 And this creates different levels of a list:
-*First level
-**Second level
-*First again
-*Last item in the list
+* First level
+** Second level
+* First again
+* Last item in the list
+
 Blogs
 -------
 
