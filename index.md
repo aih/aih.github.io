@@ -29,7 +29,7 @@ This works to set the level of header:
 And this creates different levels of a list:
 
 + First level
-> + Second level
+> Second level
 + First again
 + Last item in the list
 
