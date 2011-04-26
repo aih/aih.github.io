@@ -1,5 +1,5 @@
 ---
-layout: name
+layout: default 
 title: Home
 
 section: Home
