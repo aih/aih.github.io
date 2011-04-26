@@ -27,10 +27,10 @@ This works to set the level of header:
 # Last item in the list
 
 And this creates different levels of a list:
-*  First level
-**  Second level
-*  First again
-*  Last item in the list
++  First level
+++  Second level
++  First again
++  Last item in the list
 
 Blogs
 -------
