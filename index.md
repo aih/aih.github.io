@@ -9,25 +9,12 @@ section: Home
 Welcome
 =======
 
-+--	{.section}
 Research
 ========
-=--
 
-+-- {.section}
 Blogs
 =====
-=--
 
-+--{.section}
-=--
 
-+-- {.section}
 [Twitter](http://twitter.com/arihersh)
 ====================================
-
-=--
-
-+-- {.section}
-
-=--
