@@ -1,0 +1,19 @@
+---
+layout: post
+title: Convert PDF to Text, HTML, Word...
+date: '2012-02-15T11:25:00.000-08:00'
+author: Ari Hershowitz
+tags:
+- Metadata
+- legal documents
+- pdf conversion
+- pdftohtml
+- pdf
+- tabulaw
+- pdftotext pdf to Word
+modified_time: '2012-02-21T14:23:55.503-08:00'
+blogger_id: tag:blogger.com,1999:blog-7029518648320057552.post-2909426967439446581
+blogger_orig_url: https://blog.linkedlegislation.com/2012/02/convert-pdf-to-text-html-word.html
+---
+
+<div>I've put together a small demonstration site to convert pdfs to clean html: you can try it out <a href="http://pdf2html.tabulaw.com/" target="_blank">here</a>. &nbsp;There are many caveats that go along with this (e.g. the current server is not very stable, it only works with javascript enabled browsers, only 5 documents at a time, limited size on each document, no OCR, etc.). &nbsp;But I thought I'd get it out there for all the legal data fans to try it out and get a conversation started about data encoding. Do you have a favorite way of getting text out of pdfs?</div><div><br /></div>PDF documents are the only available starting point for a lot of government legal information. &nbsp;<a href="http://blog.tabulaw.com/2011/05/losing-data-in-pdf-all-kings-sources.html" target="_blank">I've discussed</a> some of the problems with this before, and suffice it to say that this is a recurring problem in legal informatics. &nbsp;To extract useful metadata, and to make the documents web-accessible, it is usually necessary to convert the PDF to a more portable format. The devil is in the details.<br /><div><br /></div><div>While there are many programs available that make the conversion from pdf to text, html or MS Word, there are many trade-offs, the biggest of which is to preserve layout or to make it easier to extract metadata. &nbsp;Most of the converters to html that I have found, for example, include a huge number of extra tags that clutter up the text, break up sentences and paragraphs and generally make it very hard to extract meaningful metadata from the document.</div><div><br /></div><div>I've combined a couple of open source programs (pdf2text -&gt; txt2html) and an open source tool to upload documents, to make this small site. &nbsp;If you find it useful, or need to convert large volumes of pdf documents to clean html, get in touch.</div>
