@@ -11,7 +11,8 @@ title: LinkedLegislation Blog
 # Your name to show in the footer
 author: Ari Hershowitz 
 
-theme: beautiful-jekyll-theme 
+remote_theme: https://github.com/daattali/beautiful-jekyll
+#theme: beautiful-jekyll-theme
 
 # --- List of links in the navigation bar --- #
 
