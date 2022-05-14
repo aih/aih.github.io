@@ -56,13 +56,13 @@
 
   {% if layout.common-css %}
     {% for css in layout.common-css %}
-      <link rel="stylesheet" href="{{ css | relative_url }}">
+      <link rel="stylesheet" href="{{ css | absolute_url }}">
     {% endfor %}
   {% endif %}
 
   {% if site.site-css %}
     {% for css in site.site-css %}
-      <link rel="stylesheet" href="{{ css | relative_url }}">
+      <link rel="stylesheet" href="{{ css | absolute_url }}">
     {% endfor %}
   {% endif %}
 
@@ -74,7 +74,7 @@
   
   {% if page.css %}
     {% for css in page.css %}
-      <link rel="stylesheet" href="{{ css | relative_url }}">
+      <link rel="stylesheet" href="{{ css | absolute_url }}">
     {% endfor %}
   {% endif %}
 
@@ -140,7 +140,7 @@
   {% include matomo.html %}
 
   {% if page.comments and site.staticman.repository and site.staticman.branch %}
-  <link rel="stylesheet" href="{{ "/assets/css/staticman.css" | relative_url }}">
+  <link rel="stylesheet" href="{{ "/assets/css/staticman.css" | absolute_url }}">
   {% endif %}
 
   {% if page.head-extra %}
