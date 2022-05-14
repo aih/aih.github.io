@@ -2,7 +2,7 @@
 
 {%- if site.social-network-links.rss and site.rss-description -%}
   <li class="list-inline-item">
-    <a href="{{ '/feed.xml' | absolute_url }}" title="RSS">
+    <a href="{{ '/feed.xml' | relative_url }}" title="RSS">
       <span class="fa-stack fa-lg" aria-hidden="true">
         <i class="fas fa-circle fa-stack-2x"></i>
         <i class="fas fa-rss fa-stack-1x fa-inverse"></i>

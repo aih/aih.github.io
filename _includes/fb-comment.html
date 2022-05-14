@@ -10,7 +10,7 @@
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
   </script>
-  <div class="fb-comments" data-href="{{ page.url | absolute_url }}" data-width="100%" data-numposts="5"></div>
+  <div class="fb-comments" data-href="{{ page.url | relative_url }}" data-width="100%" data-numposts="5"></div>
   <noscript>Please enable JavaScript to view the comments powered by Facebook.</noscript>
 </div>
 {%- endif -%}

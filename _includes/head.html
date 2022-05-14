@@ -40,7 +40,7 @@
   {% endif %}
 
   {% if site.rss-description %}
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | absolute_url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | relative_url }}">
   {% endif %}
 
   {% include gtag.html %}
@@ -56,13 +56,13 @@
 
   {% if layout.common-css %}
     {% for css in layout.common-css %}
-      <link rel="stylesheet" href="{{ css | absolute_url }}">
+      <link rel="stylesheet" href="{{ css | relative_url }}">
     {% endfor %}
   {% endif %}
 
   {% if site.site-css %}
     {% for css in site.site-css %}
-      <link rel="stylesheet" href="{{ css | absolute_url }}">
+      <link rel="stylesheet" href="{{ css | relative_url }}">
     {% endfor %}
   {% endif %}
 
@@ -74,7 +74,7 @@
   
   {% if page.css %}
     {% for css in page.css %}
-      <link rel="stylesheet" href="{{ css | absolute_url }}">
+      <link rel="stylesheet" href="{{ css | relative_url }}">
     {% endfor %}
   {% endif %}
 
@@ -107,19 +107,19 @@
   <meta property="og:description" content="{{ description }}">
 
   {% if img != "" %}
-  <meta property="og:image" content="{{ img | absolute_url }}">
+  <meta property="og:image" content="{{ img | relative_url }}">
   {% endif %}
 
   {% if page.id %}
   <meta property="og:type" content="article">
   <meta property="og:article:author" content="{{ site.author }}">
   <meta property="og:article:published_time" content="{{ page.date | date_to_xmlschema }}">
-  <meta property="og:url" content="{{ page.url | absolute_url }}">
-  <link rel="canonical" href="{{ page.url | absolute_url }}">
+  <meta property="og:url" content="{{ page.url | relative_url }}">
+  <link rel="canonical" href="{{ page.url | relative_url }}">
   {% else %}
   <meta property="og:type" content="website">
-  <meta property="og:url" content="{{ page.url | absolute_url | strip_index }}">
-  <link rel="canonical" href="{{ page.url | absolute_url | strip_index }}">
+  <meta property="og:url" content="{{ page.url | relative_url | strip_index }}">
+  <link rel="canonical" href="{{ page.url | relative_url | strip_index }}">
   {% endif %}
 
   {% if img != "" and img != site.avatar %}
@@ -134,13 +134,13 @@
   <meta property="twitter:description" content="{{ description }}">
 
   {% if img != "" %}
-  <meta name="twitter:image" content="{{ img | absolute_url }}">
+  <meta name="twitter:image" content="{{ img | relative_url }}">
   {% endif %}
 
   {% include matomo.html %}
 
   {% if page.comments and site.staticman.repository and site.staticman.branch %}
-  <link rel="stylesheet" href="{{ "/assets/css/staticman.css" | absolute_url }}">
+  <link rel="stylesheet" href="{{ "/assets/css/staticman.css" | relative_url }}">
   {% endif %}
 
   {% if page.head-extra %}
