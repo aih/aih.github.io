@@ -10,6 +10,8 @@ title: LinkedLegislation Blog
 
 # Your name to show in the footer
 author: Ari Hershowitz 
+repository: aih/aih.github.io
+
 
 remote_theme: https://github.com/daattali/beautiful-jekyll
 #theme: beautiful-jekyll-theme
@@ -18,7 +20,7 @@ remote_theme: https://github.com/daattali/beautiful-jekyll
 domain: aih.github.io       # if you want to force HTTPS, specify the domain without the http at the start, e.g. example.com
 url: https://aih.github.io  # the base hostname and protocol for your site, e.g. http://example.com
 baseurl: /     # place folder name if the site is served in a subfolder
-gems:
+plugins:
   - jekyll-redirect-from
 
 github: [metadata]
