@@ -20,8 +20,6 @@ remote_theme: https://github.com/daattali/beautiful-jekyll
 domain: aih.github.io       # if you want to force HTTPS, specify the domain without the http at the start, e.g. example.com
 url: https://aih.github.io  # the base hostname and protocol for your site, e.g. http://example.com
 baseurl: /     # place folder name if the site is served in a subfolder
-plugins:
-  - jekyll-redirect-from
 
 github: [metadata]
 
@@ -270,6 +268,7 @@ exclude:
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
+  - jekyll-redirect-from
 
 # Beautiful Jekyll / Dean Attali
 # 2fc73a3a967e97599c9763d05e564189
