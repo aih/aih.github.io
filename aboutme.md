@@ -6,10 +6,11 @@ subtitle: Change is hard and thrilling
 
 ![Ari standing next to a model of One Vanderbilt](/assets/img/AriProfile1.jpg){: .aboutPortrait}
 
-I'm Ari Hershowitz. I'm a dad (2 daughters), and I also:
+I'm Ari Hershowitz. I'm a dad of 2 daughters, living in California and working to bring transparency and modern software tools to government. I'm passionate about change-management in organizations, in text versions, and in career trajectory. My work has included:
 
+<div class="aboutmecontainer"  markdown="1">
 - Modernize Congress and other Legislatures
-  - Director, Open Government at Xcential Corporation, 2011-Present
+  - [Director, Open Government at Xcential Corporation](https://xcential.com/about-us/), 2011-Present
   - Founder, [DreamProIT](https://dreamproit.com.ua/)/MriiaPro
     - US/Ukrainian software consulting, 2022-Present
   - Inventor, [Document comparison for legislative texts](https://uspto.report/patent/app/20190354636), 2018
@@ -27,6 +28,7 @@ I'm Ari Hershowitz. I'm a dad (2 daughters), and I also:
   - B.S. in Molecular Biophysics and Biochemistry, Yale, 1989-1993
 
 I love finding technical solutions to help solve complex problems in the public interest.
+</div>
 
 ### Modernizing Law and Legislation
 

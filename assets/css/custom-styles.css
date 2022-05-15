@@ -27,3 +27,7 @@
 		left: 20px;
 	}
 }
+
+div.aboutmecontainer>ul>li {
+	margin-top: 20px;
+}
