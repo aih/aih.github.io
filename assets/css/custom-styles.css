@@ -3,6 +3,12 @@
 	visibility: none;
 }
 
+@media all and (min-width: 1200px) {
+	.intro-header .page-heading h1 {
+		font-size: 4rem !important;
+	}
+}
+
 @media all and (max-width: 1375px) {
 	.aboutPortrait {
 		visibility: hidden;
