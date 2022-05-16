@@ -1,7 +1,3 @@
----
-layout: null
----
-
 (function ($) {
   var $comments = $('.js-comments');
 
@@ -10,10 +6,9 @@ layout: null
 
     $(form).addClass('disabled');
 
-    {% assign sm = site.staticman -%}
-    var endpoint = '{{ sm.endpoint }}';
-    var repository = '{{ sm.repository }}';
-    var branch = '{{ sm.branch }}';
+    var endpoint = '';
+    var repository = '';
+    var branch = '';
     let url = endpoint + repository + '/' + branch + '/comments';
     let data = $(this).serialize();
 
