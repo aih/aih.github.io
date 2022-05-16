@@ -1,0 +1,18 @@
+{% assign postsByYear = site.posts | group_by_exp:"post", "post.date | date: '%Y'" %}
+<nav class="menu browse by_year text-center" aria-label="year">
+  <strong aria-hidden="true">Jump to:</strong>
+  {% for year in postsByYear %}
+  <a href="#{{ year.name }}"><span class="visually-hidden">jump to posts from</span>{{ year.name }}</a>
+  {% endfor %}
+</nav>
+{% for year in postsByYear %}
+<h2 id="{{ year.name }}">{{ year.name }}</h2>
+<ul aria-label="posts from {{ year.name }}">
+  {% for post in year.items %}
+  <li>
+    <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+    <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+  </li>
+  {% endfor %}
+</ul>
+{% endfor %}
