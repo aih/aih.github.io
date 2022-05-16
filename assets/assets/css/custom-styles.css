@@ -1,0 +1,56 @@
+.aboutPortrait {
+	display: none;
+	visibility: none;
+}
+.visually-hidden {
+	display: none;
+	visibility: none;
+}
+
+.archiveContainer {
+	display: none;
+	visibility: none;
+}
+
+@media all and (min-width: 1200px) {
+	.intro-header .page-heading h1 {
+		font-size: 4rem !important;
+	}
+}
+
+@media all and (max-width: 1375px) {
+	.aboutPortrait {
+		visibility: hidden;
+		clear: both;
+		float: left;
+		margin: 10px auto 5px 20px;
+		display: none;
+	}
+	.archiveContainer {
+		visibility: hidden;
+		clear: both;
+		float: left;
+		margin: 10px auto 5px 20px;
+		display: none;
+	}
+}
+
+@media all and (min-width: 1374px) {
+	.aboutPortrait {
+		display: block;
+		width: 300px;
+		position: fixed;
+		left: 20px;
+	}
+
+	.archiveRight .archiveContainer {
+		display: block;
+		position: fixed;
+		top: 100px;
+		right: 20px;
+	}
+}
+
+div.aboutmecontainer>ul>li {
+	margin-top: 20px;
+}
