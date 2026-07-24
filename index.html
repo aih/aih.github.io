@@ -710,9 +710,16 @@ cuEls.forEach(el=>cuObs.observe(el));
 /* ── SCROLL REVEAL ── */
 function reveal(sel,cls='vis'){
   const obs=new IntersectionObserver(entries=>{
-    entries.forEach((e,i)=>{if(e.isIntersecting){setTimeout(()=>e.target.classList.add(cls),i*65);obs.unobserve(e.target);}});
-  },{threshold:0.08});
-  document.querySelectorAll(sel).forEach(el=>obs.observe(el));
+    entries.forEach((e,i)=>{if(e.isIntersecting){setTimeout(()=>e.target.classList.add(cls),i*40);obs.unobserve(e.target);}});
+  },{threshold:0.01});
+  document.querySelectorAll(sel).forEach(el=>{
+    obs.observe(el);
+    // Fallback trigger if already in viewport
+    const rect = el.getBoundingClientRect();
+    if (rect.top < window.innerHeight && rect.bottom > 0) {
+      el.classList.add(cls);
+    }
+  });
 }
 reveal('.cat-card');
 reveal('.exp-row');
@@ -720,6 +727,9 @@ reveal('.proj-card');
 reveal('.edu-card');
 reveal('.fun-card');
 reveal('.skill-card');
+setTimeout(()=>{
+  document.querySelectorAll('.cat-card, .exp-row, .proj-card, .edu-card, .fun-card, .skill-card').forEach(el=>el.classList.add('vis'));
+}, 500);
 
 /* ── HERO CANVAS — floating network ── */
 (function(){
