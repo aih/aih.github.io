@@ -1,0 +1,188 @@
+# profile.yaml
+# Canonical source of truth for Ari Hershowitz's professional profile.
+# Drives: aih.github.io, LinkedIn paste-ready text, and auto-posted updates.
+# headline_draft / about_draft are DRAFTS for review — reconcile against the
+# live LinkedIn profile before pasting in.
+
+name: Ari Hershowitz
+email: arihershowitz@dreamproit.com
+location: United States
+links:
+  website: https://aih.github.io
+  linkedin: https://linkedin.com/in/ari-hershowitz
+  github: https://github.com/aih
+  blog_legal_tech: https://blog.linkedlegislation.org
+  blog_dreamproit: https://dreamproit.com/blog
+
+# --- DRAFT: paste into LinkedIn "Headline" field (220 char limit) ---
+headline_draft: >-
+  AI & Innovation Leader for Legal Tech | Director of Engineering, DreamProIT —
+  building law & government software with our Ukrainian dev team | Patent holder,
+  legislative XML & document comparison
+
+# --- DRAFT: paste into LinkedIn "About" field ---
+about_draft: |-
+  I help legal and government institutions modernize with AI, structured data,
+  and modern software engineering — and I lead the distributed engineering team
+  that builds it.
+
+  As founder of DreamProIT, I direct a US/Ukrainian engineering team delivering
+  full-stack, cloud, and AI-driven software for civic tech, law, and enterprise
+  clients. As a longtime innovation lead in legal technology (Xcential, 2011–2024),
+  I helped the U.S. House Office of the Clerk, House Office of Legislative Counsel,
+  Law Revision Counsel, and GPO introduce XML-based legislative drafting and
+  automated document comparison — including a U.S. patent (20190354636) for
+  comparing hierarchical legislative texts, and work recognized by the House
+  Select Committee on the Modernization of Congress.
+
+  I write and speak on AI in legislatures and parliaments (co-author, Guidelines
+  for AI in Parliaments), and I'm always glad to connect with people working on
+  legal tech, GovTech, AI policy, or building engineering teams with Ukraine.
+
+  Reach out: arihershowitz@dreamproit.com
+
+experience:
+  - company: DreamProIT / MriiaPro
+    role: Founder & CEO
+    start: "2022"
+    end: present
+    location: US / Ukraine
+    bullets:
+      - Founded and lead a US/Ukrainian software consulting firm: full-stack web, cloud infrastructure, AI engineering.
+      - Direct distributed development teams on civic tech, law, and enterprise projects.
+      - Modernizing legal and legislative data analysis tools for local, state, federal, and international bodies.
+    links:
+      - { label: "DreamProIT", url: "https://dreamproit.com/" }
+      - { label: "Blog", url: "https://dreamproit.com/blog" }
+      - { label: "Patent 20190354636", url: "https://uspto.report/patent/app/20190354636" }
+      - { label: "House Modernization Committee", url: "https://modernizecongress.house.gov/" }
+
+  - company: Ad Hoc
+    role: Digital Services Engineer
+    start: "2024-06"
+    end: "2026-06"
+    location: Remote
+    bullets:
+      - Delivered public-interest digital services focused on usability, accessibility, policy-aligned implementation.
+      - Converted copyright guidelines from PDF to semantic HTML for accessibility and web publishing quality.
+      - Supported standards-driven content modernization for government-facing workflows.
+
+  - company: Xcential Corporation
+    role: Director of Innovation (Consultant)
+    start: "2011"
+    end: "2024-06"
+    location: California / Remote
+    bullets:
+      - Led legal/legislative software innovation with U.S. House Office of the Clerk, House Office of Legislative Counsel, Law Revision Counsel, and GPO on XML-based automation and legislative tracking.
+      - Invented patented document comparison technology for legislative texts (U.S. Patent 20190354636).
+    links:
+      - { label: "Patent 20190354636", url: "https://uspto.report/patent/app/20190354636" }
+
+  - company: Tabulaw
+    role: Founder & CEO
+    start: "2008"
+    end: "2011"
+    location: California
+    bullets:
+      - Pioneered web-based legal research and drafting tools: citation management, snippet organization, legal writing workflows.
+
+  - company: Natural Resources Defense Council (NRDC)
+    role: Director, Latin American BioGems Program
+    start: "1999"
+    end: "2001"
+    location: Latin America
+    bullets:
+      - Led environmental campaigns protecting endangered ecosystems and wildlife in Belize, Peru, and Mexico.
+      - Work featured in "The Last Flight of the Scarlet Macaw" and MTV's "Trippin'".
+
+  - company: Caltech & Dana-Farber
+    role: Computational Neuroscience & Cancer Researcher
+    start: "1994"
+    end: "1999"
+    location: Pasadena, CA / Boston, MA
+    bullets:
+      - "M.S., Computation and Neural Systems (Caltech): neural processing and brain mechanics in insects."
+      - Molecular biology research at Dana-Farber Cancer Institute and Yale University.
+
+education:
+  - degree: Juris Doctorate (J.D.)
+    school: Georgetown University Law Center
+    location: Washington, DC
+    notes: California Bar Member since 2009
+  - degree: M.S., Computation and Neural Systems
+    school: California Institute of Technology (Caltech)
+    years: "1996–1999"
+    location: Pasadena, CA
+  - degree: B.S., Molecular Biophysics and Biochemistry
+    school: Yale University
+    years: "1989–1993"
+    location: New Haven, CT
+
+skills:
+  - Python
+  - Go
+  - JavaScript
+  - Legislative XML & document diffing
+  - LLMs / NLP
+  - Git & version control
+  - Docker / Kubernetes
+  - Agile team leadership (distributed / Ukraine)
+  - Computational neuroscience
+  - Government / open-gov policy
+
+publications:
+  - title: Guidelines for AI in Parliaments (Lignes directrices pour l'IA dans les parlements)
+    type: Book
+    date: "2024 / 2026-03"
+    authors: [Fotios Fitsilis, Jörn Von Lucke, Franklin De Vrieze, Ari Hershowitz, Marci Harris, "et al."]
+    url: https://www.researchgate.net/publication/386008447_Lignes_directrices_pour_l'IA_dans_les_parlements
+  - title: Executing United States Bills into Law
+    type: Book Chapter
+    date: "2023-12"
+    authors: [Ari Hershowitz]
+    url: https://www.researchgate.net/publication/376288607_Executing_United_States_Bills_into_Law
+  - title: "\"Comparative Prints Suite\" of the United States House of Representatives"
+    type: Book Chapter
+    date: "2023-12"
+    authors: [Ari Hershowitz]
+    url: https://www.researchgate.net/publication/376288514_Comparative_Prints_Suite_of_the_United_States_House_of_Representatives
+  - title: Guidelines on the Introduction and Use of Artificial Intelligence in Parliamentary Workspace
+    type: Data / Report
+    date: "2023-04"
+    authors: [Fotios Fitsilis, Jörn Von Lucke, Franklin De Vrieze, Ari Hershowitz, "et al."]
+    url: https://www.researchgate.net/publication/370258079_Guidelines_on_the_Introduction_and_Use_of_Artificial_Intelligence_in_Parliamentary_Workspace
+  - title: "A Solid Foundation: Belize's Chalillo Dam and Environmental Decisionmaking"
+    type: Journal Article
+    date: "2008"
+    authors: [Ari Hershowitz]
+    url: https://www.jstor.org/stable/44321074
+  - title: Monocyte Chemoattractant Protein-1 (MCP-1) Gene Transduction Inhibits Tumor Growth
+    type: Research Article
+    date: "1995-11"
+    authors: [R. Zhang, A. Hershowitz, "et al."]
+  - title: Parameters Affecting the Efficacy of Adenovirus-Mediated Gene-Transfer to Breast-Cancer Cells
+    type: Research Article
+    date: "1995-02"
+    authors: [A. Hershowitz, "et al."]
+
+talks:
+  - title: Modernizing Law with Git & Open Standards
+    venue: Git Satellite Brussels
+    url: https://www.youtube.com/watch?v=SmLpJEZyvI0
+
+patents:
+  - title: Document Comparison of Legislative Texts
+    number: US 20190354636
+    year: 2018
+    url: https://uspto.report/patent/app/20190354636
+
+# Log of new items (blog posts, conference talks, papers). Each entry gets
+# auto-posted to LinkedIn's feed by scripts/post_to_linkedin.py the next time
+# this file is pushed to main. Already-posted entries are tracked in
+# updates_posted.json so nothing gets posted twice.
+updates: []
+  # - date: 2026-08-XX
+  #   type: conference
+  #   title: "ILTACON 2026"
+  #   summary: "..."
+  #   url: "..."

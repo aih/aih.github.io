@@ -1,0 +1,38 @@
+name: Post updates to LinkedIn
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "profile/profile.yaml"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r profile/scripts/requirements.txt
+
+      - name: Post new updates to LinkedIn
+        env:
+          LINKEDIN_ACCESS_TOKEN: ${{ secrets.LINKEDIN_ACCESS_TOKEN }}
+          LINKEDIN_AUTHOR_URN: "urn:li:person:JKoKTJIwxu"
+        run: python profile/scripts/post_to_linkedin.py
+
+      - name: Commit updated posted-state file
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add profile/updates_posted.json
+          git diff --cached --quiet || git commit -m "chore: record LinkedIn posts [skip ci]"
+          git push
