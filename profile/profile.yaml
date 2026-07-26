@@ -16,17 +16,10 @@ links:
 
 # --- DRAFT: paste into LinkedIn "Headline" field (220 char limit) ---
 headline_draft: >-
-<<<<<<< HEAD
   AI & Innovation Leader for Legal Tech | CEO and Director of Engineering, DreamProIT — building law & government software with our Ukrainian dev team | Patent holder, legislative XML & document comparison
-=======
-  AI & Innovation Leader for Legal Tech | Director of Engineering, DreamProIT —
->>>>>>> origin/main
-  building law & government software with our Ukrainian dev team | Patent holder,
-  legislative XML & document comparison
 
 # --- DRAFT: paste into LinkedIn "About" field ---
 about_draft: |-
-<<<<<<< HEAD
   I help legal and government organizations modernize with AI, structured data, and modern software engineering. 
 
   As founder of DreamProIT, I direct a US/Ukrainian engineering team delivering full-stack, cloud, and AI-driven software for legal, civic tech, and enterprise clients. As a longtime innovation lead in legal technology, I helped the U.S. House Office of the Clerk, House Office of Legislative Counsel, Law Revision Counsel, and GPO introduce XML-based legislative drafting and automated document comparison — including a U.S. patent (20190354636) for comparing hierarchical legislative texts, and work recognized by the House Select Committee on the Modernization of Congress.
@@ -34,26 +27,6 @@ about_draft: |-
   I write and speak on AI in legislatures and parliaments (co-author, Guidelines for AI in Parliaments), and I'm always glad to connect with people working on legal tech, GovTech, AI policy, or building engineering teams with Ukraine.
 
 Reach out: arihershowitz@dreamproit.com
-=======
-  I help legal and government institutions modernize with AI, structured data,
-  and modern software engineering — and I lead the distributed engineering team
-  that builds it.
-
-  As founder of DreamProIT, I direct a US/Ukrainian engineering team delivering
-  full-stack, cloud, and AI-driven software for civic tech, law, and enterprise
-  clients. As a longtime innovation lead in legal technology (Xcential, 2011–2024),
-  I helped the U.S. House Office of the Clerk, House Office of Legislative Counsel,
-  Law Revision Counsel, and GPO introduce XML-based legislative drafting and
-  automated document comparison — including a U.S. patent (20190354636) for
-  comparing hierarchical legislative texts, and work recognized by the House
-  Select Committee on the Modernization of Congress.
-
-  I write and speak on AI in legislatures and parliaments (co-author, Guidelines
-  for AI in Parliaments), and I'm always glad to connect with people working on
-  legal tech, GovTech, AI policy, or building engineering teams with Ukraine.
-
-  Reach out: arihershowitz@dreamproit.com
->>>>>>> origin/main
 
 experience:
   - company: DreamProIT / MriiaPro
@@ -62,17 +35,12 @@ experience:
     end: present
     location: US / Ukraine
     bullets:
-<<<<<<< HEAD
       - Leader of US/Ukrainian software consulting firm: full-stack web, cloud infrastructure, AI engineering.
-=======
-      - Founded and lead a US/Ukrainian software consulting firm: full-stack web, cloud infrastructure, AI engineering.
->>>>>>> origin/main
       - Direct distributed development teams on civic tech, law, and enterprise projects.
       - Modernizing legal and legislative data analysis tools for local, state, federal, and international bodies.
     links:
       - { label: "DreamProIT", url: "https://dreamproit.com/" }
       - { label: "Blog", url: "https://dreamproit.com/blog" }
-<<<<<<< HEAD
       - {
           label: "Patent 20190354636",
           url: "https://uspto.report/patent/app/20190354636",
@@ -81,10 +49,6 @@ experience:
           label: "House Modernization Committee",
           url: "https://modernizecongress.house.gov/",
         }
-=======
-      - { label: "Patent 20190354636", url: "https://uspto.report/patent/app/20190354636" }
-      - { label: "House Modernization Committee", url: "https://modernizecongress.house.gov/" }
->>>>>>> origin/main
 
   - company: Ad Hoc
     role: Digital Services Engineer
@@ -92,14 +56,9 @@ experience:
     end: "2026-06"
     location: Remote
     bullets:
-<<<<<<< HEAD
       - Led engineering teams for federal agencies including the Library of Congress, NASA, National Weather Service, SSA, focused on usability, accessibility, policy-aligned implementation.
       - Drafted proposals and organized software code challenge teams, winning multi-million dollar contracts to modernize government software and software delivery processes.
       - Prototyped new technical approaches, including conversion of US copyright guidelines from PDF to semantic HTML for accessibility and web publishing quality.
-=======
-      - Delivered public-interest digital services focused on usability, accessibility, policy-aligned implementation.
-      - Converted copyright guidelines from PDF to semantic HTML for accessibility and web publishing quality.
->>>>>>> origin/main
       - Supported standards-driven content modernization for government-facing workflows.
 
   - company: Xcential Corporation
@@ -111,14 +70,10 @@ experience:
       - Led legal/legislative software innovation with U.S. House Office of the Clerk, House Office of Legislative Counsel, Law Revision Counsel, and GPO on XML-based automation and legislative tracking.
       - Invented patented document comparison technology for legislative texts (U.S. Patent 20190354636).
     links:
-<<<<<<< HEAD
       - {
           label: "Patent 20190354636",
           url: "https://uspto.report/patent/app/20190354636",
         }
-=======
-      - { label: "Patent 20190354636", url: "https://uspto.report/patent/app/20190354636" }
->>>>>>> origin/main
 
   - company: Tabulaw
     role: Founder & CEO
@@ -137,18 +92,6 @@ experience:
       - Led environmental campaigns protecting endangered ecosystems and wildlife in Belize, Peru, and Mexico.
       - Work featured in "The Last Flight of the Scarlet Macaw" and MTV's "Trippin'".
 
-<<<<<<< HEAD
-=======
-  - company: Caltech & Dana-Farber
-    role: Computational Neuroscience & Cancer Researcher
-    start: "1994"
-    end: "1999"
-    location: Pasadena, CA / Boston, MA
-    bullets:
-      - "M.S., Computation and Neural Systems (Caltech): neural processing and brain mechanics in insects."
-      - Molecular biology research at Dana-Farber Cancer Institute and Yale University.
-
->>>>>>> origin/main
 education:
   - degree: Juris Doctorate (J.D.)
     school: Georgetown University Law Center
@@ -179,7 +122,6 @@ publications:
   - title: Guidelines for AI in Parliaments (Lignes directrices pour l'IA dans les parlements)
     type: Book
     date: "2024 / 2026-03"
-<<<<<<< HEAD
     authors:
       [
         Fotios Fitsilis,
@@ -189,20 +131,13 @@ publications:
         Marci Harris,
         "et al.",
       ]
-=======
-    authors: [Fotios Fitsilis, Jörn Von Lucke, Franklin De Vrieze, Ari Hershowitz, Marci Harris, "et al."]
->>>>>>> origin/main
     url: https://www.researchgate.net/publication/386008447_Lignes_directrices_pour_l'IA_dans_les_parlements
   - title: Executing United States Bills into Law
     type: Book Chapter
     date: "2023-12"
     authors: [Ari Hershowitz]
     url: https://www.researchgate.net/publication/376288607_Executing_United_States_Bills_into_Law
-<<<<<<< HEAD
   - title: '"Comparative Prints Suite" of the United States House of Representatives'
-=======
-  - title: "\"Comparative Prints Suite\" of the United States House of Representatives"
->>>>>>> origin/main
     type: Book Chapter
     date: "2023-12"
     authors: [Ari Hershowitz]
@@ -210,7 +145,6 @@ publications:
   - title: Guidelines on the Introduction and Use of Artificial Intelligence in Parliamentary Workspace
     type: Data / Report
     date: "2023-04"
-<<<<<<< HEAD
     authors:
       [
         Fotios Fitsilis,
@@ -219,9 +153,6 @@ publications:
         Ari Hershowitz,
         "et al.",
       ]
-=======
-    authors: [Fotios Fitsilis, Jörn Von Lucke, Franklin De Vrieze, Ari Hershowitz, "et al."]
->>>>>>> origin/main
     url: https://www.researchgate.net/publication/370258079_Guidelines_on_the_Introduction_and_Use_of_Artificial_Intelligence_in_Parliamentary_Workspace
   - title: "A Solid Foundation: Belize's Chalillo Dam and Environmental Decisionmaking"
     type: Journal Article
