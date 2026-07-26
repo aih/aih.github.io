@@ -14,7 +14,7 @@
     <!-- Open Graph / Social Media -->
     <meta property="og:title" content="Ari Hershowitz — Legal Tech & AI Innovation">
     <meta property="og:description"
-      content="Change is hard and thrilling. Bringing transparency, modern software tools, and AI to government.">
+      content="Change is hard and thrilling. Bringing transparency, modern software tools, and AI to law and government.">
     <meta property="og:image" content="assets/img/AriProfile1-crop.png">
     <meta property="og:type" content="website">
 
@@ -24,7 +24,7 @@
     <meta name="twitter:creator" content="@arihersh">
     <meta name="twitter:title" content="Ari Hershowitz — Profile">
     <meta name="twitter:description"
-      content="Change is hard and thrilling. Bringing transparency, modern software tools, and AI to government.">
+      content="Change is hard and thrilling. Bringing transparency, modern software tools, and AI to law and government.">
     <meta name="twitter:image" content="assets/img/AriProfile1-crop.png">
 
     <!-- Google Fonts -->
@@ -1105,6 +1105,34 @@
         color: var(--ink3);
       }
 
+      .edu-bullets {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 0.35rem;
+        margin-top: 0.75rem;
+        padding-left: 0;
+      }
+
+      .edu-bullets li {
+        font-size: 0.78rem;
+        color: var(--ink3);
+        padding-left: 0.85rem;
+        position: relative;
+        line-height: 1.6;
+      }
+
+      .edu-bullets li::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0.55rem;
+        width: 3.5px;
+        height: 3.5px;
+        border-radius: 50%;
+        background: var(--red);
+      }
+
       /* ESOTERICA / BEYOND CODE */
       #esoterica {
         background: linear-gradient(155deg, var(--sage) 0%, #0f2820 100%);
@@ -1781,11 +1809,26 @@
 
         <div class="edu-grid">
           <div class="edu-card">
+            <div class="edu-icon-box">⚖️</div>
+            <div>
+              <div class="edu-degree">Juris Doctorate (J.D.)</div>
+              <div class="edu-school">Georgetown University Law Center</div>
+              <div class="edu-years">Washington, DC</div>
+              <ul class="edu-bullets">
+                <li>California Bar Member since 2009</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="edu-card">
             <div class="edu-icon-box">🧠</div>
             <div>
               <div class="edu-degree">M.S., Computation and Neural Systems</div>
               <div class="edu-school">California Institute of Technology (Caltech)</div>
               <div class="edu-years">1996 – 1999 · Pasadena, CA</div>
+              <ul class="edu-bullets">
+                <li>Investigated neural processing and brain mechanics in insects</li>
+              </ul>
             </div>
           </div>
 
