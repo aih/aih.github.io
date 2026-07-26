@@ -1,0 +1,21 @@
+================================================================================
+AI-GENERATED DEMONSTRATION IMAGES RECORD
+================================================================================
+Generated Date: July 26, 2026
+
+The following images were dynamically generated during profile development using AI Image Generation:
+
+1. File: assets/img/fluorescent-neuron.png
+   - Prompt: "A high-resolution scientific microscopy photograph of fluorescent projection neurons in a grasshopper or locust brain, glowing in vibrant neon green, cyan, and gold fluorescent dye against a deep dark background. Intricate branching dendrites and neural pathways lit up under a confocal microscope, stunning computational neuroscience visualization."
+   - Style: Confocal laser scanning microscopy of insect brain projection neurons.
+
+2. File: assets/img/gray-whale.png
+   - Prompt: "A high-resolution wildlife photograph of a majestic Pacific Gray Whale surfacing in clear blue Pacific ocean waters, showing its characteristic mottled grey and white barnacled skin, blowhole spray, and powerful tail flukes under bright natural sunlight."
+   - Style: High-detail Pacific Gray Whale marine photography.
+
+3. File: assets/img/scarlet-macaw.png
+   - Prompt: "A high-resolution wildlife photograph of a wild Scarlet Macaw (Ara macao) flying over a dense green tropical rainforest canopy in Belize, showing its brilliant scarlet red body, bright yellow wing coverts, and royal blue primary feathers, sharp detail under natural sunlight."
+   - Style: High-detail tropical wildlife in flight.
+
+Note: These AI-generated files are preserved in the repository assets folder for future reference or presentation use.
+================================================================================
