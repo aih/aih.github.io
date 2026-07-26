@@ -9,7 +9,10 @@
     <meta name="description"
       content="Ari Hershowitz — Leader in Legal Technology, AI in Congress, Ukrainian Engineering teams, and Interdisciplinary Science.">
     <meta name="keywords"
-      content="Ari Hershowitz, law, legislation, technology, AI in Congress, legal technology, Ukrainian Devs, Esoterica, Caltech, Yale, Tabulaw, DreamProIT, diff, git, XML">
+      content="Ari Hershowitz, law, legislation, technology, AI in Congress, legal technology, Ukrainian Devs, Neuroscience &amp; Conservation, Caltech, Yale, Tabulaw, DreamProIT, diff, git, XML">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
 
     <!-- Open Graph / Social Media -->
     <meta property="og:title" content="Ari Hershowitz — Legal Tech & AI Innovation">
@@ -41,18 +44,18 @@
         --cream: #F7F4EE;
         --warm: #FFFFFF;
         --sand: #EAE5DC;
-        --red: #D33F24;
-        --red-light: #FCEBE8;
-        --red-dark: #A62D17;
-        --sage: #16382C;
-        --sage-light: #E2EBE8;
+        --red: #2563EB; /* Accessible Vibrant Royal Blue */
+        --red-light: #EFF6FF; /* Soft Sky Blue Tint */
+        --red-dark: #1E40AF; /* Deep Navy Blue */
+        --sage: #1E3A8A; /* Deep Navy Blue Container */
+        --sage-light: #E0F2FE;
         --ink: #0f0f0f;
         --ink2: #2e2e2e;
         --ink3: #555;
-        --border: rgba(22, 56, 44, 0.11);
+        --border: rgba(30, 64, 175, 0.12);
         --s1: 0 2px 8px rgba(0, 0, 0, 0.04);
-        --s2: 0 8px 24px rgba(22, 56, 44, 0.08);
-        --s3: 0 20px 48px rgba(22, 56, 44, 0.13);
+        --s2: 0 8px 24px rgba(30, 64, 175, 0.09);
+        --s3: 0 20px 48px rgba(30, 64, 175, 0.14);
       }
 
       * {
@@ -490,7 +493,7 @@
       }
 
       .stats-strip {
-        background: var(--sage);
+        background: #1E3A8A; /* Deep Navy Blue */
         border-radius: 1.5rem;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -501,7 +504,7 @@
       .stat {
         padding: 2rem 1.5rem;
         text-align: center;
-        border-right: 1px solid rgba(255, 255, 255, 0.08);
+        border-right: 1px solid rgba(255, 255, 255, 0.12);
         cursor: default;
       }
 
@@ -512,13 +515,13 @@
       .stat-num {
         font-family: 'Lora', serif;
         font-size: 2.1rem;
-        color: #fff;
+        color: #ffffff;
         letter-spacing: -0.04em;
         line-height: 1;
       }
 
       .stat-num span {
-        color: var(--red);
+        color: #93C5FD; /* Bright Ice Blue for 100% colorblind readability */
       }
 
       .stat-label {
@@ -770,6 +773,109 @@
         font-weight: 600;
       }
 
+      /* CARD THUMBNAIL IMAGES */
+      .cat-thumb-img {
+        width: 100%;
+        height: 170px;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 0.85rem;
+        margin-bottom: 1.1rem;
+        border: 1px solid var(--border);
+        transition: transform 0.35s ease, filter 0.35s ease;
+      }
+
+      .cat-thumb-img:hover {
+        transform: scale(1.02);
+      }
+
+      .fun-thumb-img {
+        width: 100%;
+        height: 160px;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 0.75rem;
+        display: block;
+        margin-bottom: 0;
+        border: 1px solid var(--border);
+        transition: transform 0.35s ease;
+      }
+
+      .fun-thumb-img:hover {
+        transform: scale(1.02);
+      }
+
+      .card-img-wrap {
+        position: relative;
+        overflow: hidden;
+        border-radius: 0.75rem;
+        margin-bottom: 0.85rem;
+        cursor: pointer;
+      }
+
+      .card-img-wrap img {
+        display: block;
+      }
+
+      .img-caption-overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(15, 23, 42, 0.94);
+        color: #FFFFFF;
+        padding: 0.55rem 0.75rem;
+        font-size: 0.73rem;
+        line-height: 1.4;
+        border-top: 2px solid #3B82F6;
+        opacity: 0;
+        transform: translateY(100%);
+        transition: opacity 0.3s ease, transform 0.3s ease;
+        backdrop-filter: blur(4px);
+        pointer-events: none;
+      }
+
+      .card-img-wrap:hover .img-caption-overlay,
+      .card-img-wrap:focus-within .img-caption-overlay {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      .img-caption-overlay strong {
+        color: #93C5FD; /* Bright sky blue for maximum colorblind contrast */
+        font-weight: 600;
+      }
+
+      .img-caption-overlay span.attr {
+        display: block;
+        font-size: 0.65rem;
+        color: #E2E8F0;
+        margin-top: 0.2rem;
+      }
+
+      .htag {
+        text-decoration: none;
+        cursor: pointer;
+        transition: all 0.2s ease;
+      }
+
+      .htag:hover {
+        background: var(--red);
+        color: #fff;
+        border-color: var(--red);
+      }
+
+      .float-chip {
+        text-decoration: none;
+        cursor: pointer;
+        transition: transform 0.25s, box-shadow 0.25s;
+      }
+
+      .float-chip:hover {
+        transform: translateY(-2px);
+        box-shadow: var(--s2);
+      }
+
       .outcomes {
         display: flex;
         flex-wrap: wrap;
@@ -786,12 +892,15 @@
         padding: 0.6rem 0.95rem;
         min-width: 125px;
         box-shadow: var(--s1);
-        transition: transform 0.2s, box-shadow 0.2s;
+        text-decoration: none;
+        cursor: pointer;
+        transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
       }
 
       .oc:hover {
         transform: translateY(-2px);
         box-shadow: var(--s2);
+        border-color: var(--red);
       }
 
       .oc-n {
@@ -1031,6 +1140,172 @@
         font-size: 0.84rem;
         color: var(--ink3);
         line-height: 1.72;
+      }
+
+      /* PUBLICATIONS */
+      #publications {
+        padding: 5rem 0;
+      }
+
+      .pub-filters {
+        display: flex;
+        gap: 0.6rem;
+        margin-bottom: 2rem;
+        flex-wrap: wrap;
+      }
+
+      .pub-filter-btn {
+        background: var(--sand);
+        border: 1px solid var(--border);
+        color: var(--ink3);
+        padding: 0.45rem 1.1rem;
+        border-radius: 100px;
+        font-size: 0.8rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.2s ease;
+      }
+
+      .pub-filter-btn:hover,
+      .pub-filter-btn.active {
+        background: var(--red);
+        color: #fff;
+        border-color: var(--red);
+      }
+
+      .pub-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+      }
+
+      .pub-card {
+        background: #fff;
+        border: 1px solid var(--border);
+        border-radius: 1.25rem;
+        padding: 1.75rem;
+        position: relative;
+        overflow: hidden;
+        box-shadow: var(--s1);
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.4s ease, transform 0.4s ease, box-shadow 0.25s ease;
+      }
+
+      .pub-card.vis {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      .pub-card.pub-hidden {
+        display: none !important;
+      }
+
+      .pub-card:hover {
+        box-shadow: var(--s2);
+        transform: translateY(-2px);
+      }
+
+      .pub-card::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 4px;
+        background: var(--red);
+        transform: scaleY(0);
+        transform-origin: top;
+        transition: transform 0.3s;
+      }
+
+      .pub-card:hover::after {
+        transform: scaleY(1);
+      }
+
+      .pub-meta-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 0.5rem;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+      }
+
+      .pub-type {
+        font-size: 0.65rem;
+        font-weight: 700;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: var(--red);
+        background: var(--red-light);
+        padding: 0.2rem 0.6rem;
+        border-radius: 100px;
+      }
+
+      .pub-date {
+        font-size: 0.78rem;
+        color: var(--ink3);
+        font-weight: 600;
+      }
+
+      .pub-title {
+        font-family: 'Lora', serif;
+        font-size: 1.15rem;
+        color: var(--ink);
+        font-weight: 600;
+        margin-bottom: 0.45rem;
+        line-height: 1.4;
+      }
+
+      .pub-title a {
+        color: inherit;
+        text-decoration: none;
+        border-bottom: 1.5px solid var(--red-light);
+        transition: border-color 0.2s;
+      }
+
+      .pub-title a:hover {
+        border-color: var(--red);
+      }
+
+      .pub-authors {
+        font-size: 0.82rem;
+        color: var(--sage);
+        font-weight: 500;
+        margin-bottom: 0.55rem;
+      }
+
+      .pub-desc {
+        font-size: 0.84rem;
+        color: var(--ink3);
+        line-height: 1.68;
+        margin-bottom: 0.65rem;
+      }
+
+      .pub-langs {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.35rem;
+        align-items: center;
+        margin-top: 0.5rem;
+      }
+
+      .pub-lang-lbl {
+        font-size: 0.72rem;
+        font-weight: 600;
+        color: var(--ink2);
+        margin-right: 0.2rem;
+      }
+
+      .pub-ltag {
+        font-size: 0.65rem;
+        background: var(--sand);
+        color: var(--sage);
+        font-weight: 700;
+        padding: 0.15rem 0.5rem;
+        border-radius: 4px;
+        border: 1px solid var(--border);
       }
 
       /* EDUCATION */
@@ -1408,17 +1683,18 @@
 
     <!-- NAV -->
     <nav id="nav">
-      <a href="#hero" class="nav-logo">Ari Hershowitz<span>.</span></a>
+      <a href="#hero" class="nav-logo">Ari Hershowitz</a>
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#categories">Thematic Focus</a></li>
         <li><a href="#experience">Experience</a></li>
         <li><a href="#tech">Tech Stack</a></li>
         <li><a href="#projects">Projects</a></li>
+        <li><a href="#publications">Publications</a></li>
         <li><a href="#education">Education</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#contact">Contact Info</a></li>
       </ul>
-      <a href="mailto:ari@linkedlegislation.com" class="nav-cta">Get in touch</a>
+      <a href="mailto:arihershowitz@dreamproit.com" class="nav-cta">Email me</a>
       <button class="hamburger" id="hamburger"
         aria-label="Toggle Navigation Menu"><span></span><span></span><span></span></button>
     </nav>
@@ -1429,9 +1705,10 @@
       <a href="#experience" onclick="closeMob()">Experience</a>
       <a href="#tech" onclick="closeMob()">Tech Stack</a>
       <a href="#projects" onclick="closeMob()">Projects</a>
+      <a href="#publications" onclick="closeMob()">Publications</a>
       <a href="#education" onclick="closeMob()">Education</a>
-      <a href="#contact" onclick="closeMob()">Contact</a>
-      <a href="mailto:ari@linkedlegislation.com" style="color:var(--red)">Get in touch</a>
+      <a href="#contact" onclick="closeMob()">Contact Info</a>
+      <a href="mailto:arihershowitz@dreamproit.com" style="color:var(--red)">Email me</a>
     </div>
 
     <!-- HERO -->
@@ -1449,10 +1726,10 @@
             science.</p>
 
           <div class="hero-tags">
-            <span class="htag">⚖️ Legal Technology</span>
-            <span class="htag">🤖 1st AI in Congress</span>
-            <span class="htag">🇺🇦 Ukrainian Devs</span>
-            <span class="htag">🧠 Esoterica</span>
+            <a href="#categories" class="htag">⚖️ Legal Technology</a>
+            <a href="#projects" class="htag">🤖 1st AI in Congress</a>
+            <a href="https://dreamproit.com/" target="_blank" class="htag">🇺🇦 Ukrainian Devs ↗</a>
+            <a href="#esoterica" class="htag">🧠 Neuroscience &amp; Conservation</a>
           </div>
 
           <div class="hero-btns">
@@ -1466,9 +1743,9 @@
           <div class="photo-blob"></div>
           <img src="assets/img/AriProfile1-crop.png" class="hero-photo" alt="Ari Hershowitz Profile"
             onerror="this.src='assets/img/AriProfile1.jpg'">
-          <div class="float-chip">📜 Legislative XML & Diff</div>
-          <div class="float-chip">🏛️ Modernizing Congress</div>
-          <div class="float-chip">🚀 US / Ukrainian Dev Teams</div>
+          <a href="#projects" class="float-chip">📜 Legal Tech Innovation</a>
+          <a href="#projects" class="float-chip">🏛️ Modernizing Congress</a>
+          <a href="https://dreamproit.com/" target="_blank" class="float-chip">🚀 US / Ukrainian Dev Teams ↗</a>
         </div>
       </div>
     </section>
@@ -1508,7 +1785,7 @@
           <!-- Category 1: Legal Technology -->
           <div class="cat-card">
             <span class="cat-tag">Core Discipline</span>
-            <h3 class="cat-title">Legal Technology</h3>
+            <h3 class="cat-title"><a href="#projects" style="color:inherit;text-decoration:none;">Legal Technology ↗</a></h3>
             <p class="cat-desc">Architecting next-generation drafting, comparison, and legislative XML infrastructure
               for statutory bodies and legal professionals.</p>
             <ul class="cat-bullets">
@@ -1516,6 +1793,7 @@
               <li>Collaborated with House Office of the Clerk, House Office of Legislative Counsel, Law Revision
                 Counsel, and the Government Publishing Office to introduce XML-based
                 automation and legislative tracking tools.</li>
+              <li><strong>Blog:</strong> <a href="https://blog.linkedlegislation.org" target="_blank">blog.linkedlegislation.org ↗</a> — Legislative XML &amp; legal tech</li>
               <li><strong>Inventor:</strong> U.S. Patent <a href="https://uspto.report/patent/app/20190354636"
                   target="_blank">20190354636</a> for Document Comparison of Legislative Texts</li>
               <li><strong>Founder & CEO</strong> of Tabulaw (2008–2011) — legal drafting software</li>
@@ -1526,7 +1804,7 @@
           <!-- Category 2: First AI in Congress -->
           <div class="cat-card">
             <span class="cat-tag">Innovation</span>
-            <h3 class="cat-title">First AI in Congress</h3>
+            <h3 class="cat-title"><a href="#projects" style="color:inherit;text-decoration:none;">First AI in Congress ↗</a></h3>
             <p class="cat-desc">Pioneering AI, automated text comparison, and intelligent workflow tools to modernize
               the United States House of Representatives.</p>
             <ul class="cat-bullets">
@@ -1541,23 +1819,38 @@
 
           <!-- Category 3: Ukrainian Devs -->
           <div class="cat-card">
+            <figure class="card-img-wrap">
+              <img src="assets/img/ari-ukraine-mountain.jpg" alt="Ari Hershowitz in the Carpathian Mountains, Ukraine (Personal Collection)" title="Ukrainian Devs: Ari Hershowitz in the Carpathian Mountains, Ukraine (Photo: Personal Collection)" class="cat-thumb-img">
+              <figcaption class="img-caption-overlay">
+                <strong>Ukrainian Devs:</strong> Ari Hershowitz in the Carpathian Mountains, Ukraine.
+                <span class="attr">(Photo: Personal Collection)</span>
+              </figcaption>
+            </figure>
             <span class="cat-tag">Global Engineering</span>
-            <h3 class="cat-title">Ukrainian Devs</h3>
+            <h3 class="cat-title"><a href="https://dreamproit.com/" target="_blank" style="color:inherit;text-decoration:none;">Ukrainian Devs ↗</a></h3>
             <p class="cat-desc">Building and managing elite software engineering teams with top Ukrainian talent to
               build state-of-the-art applications.</p>
             <ul class="cat-bullets">
-              <li><strong>Founder:</strong> <a href="https://dreamproit.com.ua/" target="_blank">DreamProIT</a> /
+              <li><strong>Founder:</strong> <a href="https://dreamproit.com/" target="_blank">DreamProIT</a> /
                 MriiaPro (2022–Present)</li>
+              <li><strong>Blog:</strong> <a href="https://dreamproit.com/blog" target="_blank">dreamproit.com/blog ↗</a> — Engineering leadership &amp; agile teams</li>
               <li>US/Ukrainian high-performance software engineering & consulting</li>
               <li>Delivering mission-critical public interest and enterprise tools</li>
               <li>Championing talent, resilience, and software craft under pressure</li>
             </ul>
           </div>
 
-          <!-- Category 4: Esoterica -->
+          <!-- Category 4: Neuroscience & Conservation -->
           <div class="cat-card">
+            <figure class="card-img-wrap">
+              <img src="assets/img/ari-windsurfing.jpg" alt="Ari Hershowitz windsurfing (Personal Collection)" title="Windsurfing: Ari Hershowitz in action (Photo: Personal Collection)" class="cat-thumb-img">
+              <figcaption class="img-caption-overlay">
+                <strong>Windsurfing:</strong> Ari Hershowitz in action.
+                <span class="attr">(Photo: Personal Collection)</span>
+              </figcaption>
+            </figure>
             <span class="cat-tag">Interdisciplinary Science</span>
-            <h3 class="cat-title">Esoterica</h3>
+            <h3 class="cat-title"><a href="#esoterica" style="color:inherit;text-decoration:none;">Neuroscience &amp; Conservation ↗</a></h3>
             <p class="cat-desc">From insect neural computation to rainforest conservation and cancer genetics—a lifelong
               journey exploring complex systems.</p>
             <ul class="cat-bullets">
@@ -1600,11 +1893,10 @@
                   and international organizations.</li>
               </ul>
               <div class="outcomes">
-                <div class="oc"><span class="oc-n">US / UA</span><span class="oc-l">Engineering Bridge</span></div>
-                <div class="oc"><span class="oc-n">Full-Stack</span><span class="oc-l">Agile Delivery</span></div>
-                <div class="oc"><span class="oc-n">Patent</span><span class="oc-l">Doc Comparison 2018</span></div>
-                <div class="oc"><span class="oc-n">U.S. House</span><span class="oc-l">Modernization Partner</span>
-                </div>
+                <a href="https://dreamproit.com/" target="_blank" class="oc"><span class="oc-n">US / UA</span><span class="oc-l">Engineering Bridge ↗</span></a>
+                <a href="#tech" class="oc"><span class="oc-n">Full-Stack</span><span class="oc-l">Agile Delivery</span></a>
+                <a href="https://uspto.report/patent/app/20190354636" target="_blank" class="oc"><span class="oc-n">Patent</span><span class="oc-l">Doc Comparison 2018 ↗</span></a>
+                <a href="https://modernizecongress.house.gov/" target="_blank" class="oc"><span class="oc-n">U.S. House</span><span class="oc-l">Modernization Partner ↗</span></a>
               </div>
             </div>
           </div>
@@ -1625,12 +1917,21 @@
                 <li>Supported standards-driven content modernization efforts for government-facing workflows and
                   documentation.</li>
               </ul>
-              <div class="outcomes">
-                <div class="oc"><span class="oc-n">Accessibility</span><span class="oc-l">PDF-to-HTML Conversion</span>
-                </div>
-                <div class="oc"><span class="oc-n">Digital Service</span><span class="oc-l">Content Modernization</span>
-                </div>
-              </div>
+            </div>
+          </div>
+
+          <div class="exp-row">
+            <div class="exp-meta">
+              <div class="exp-date">2011 – June 2024</div>
+              <div class="exp-co">Xcential Corporation</div>
+              <div class="exp-loc">California / Remote</div>
+            </div>
+            <div>
+              <div class="exp-role">Director of Innovation (Consultant)</div>
+              <ul class="exp-bullets">
+                <li>Led legal and legislative software innovation, collaborating with the U.S. House Office of the Clerk, House Office of Legislative Counsel, Law Revision Counsel, and GPO to introduce XML-based automation and legislative tracking tools.</li>
+                <li>Invented patented document comparison technology for legislative texts (<a href="https://uspto.report/patent/app/20190354636" target="_blank">U.S. Patent 20190354636 ↗</a>). See overview in the <a href="#categories">Legal Technology</a> section above.</li>
+              </ul>
             </div>
           </div>
 
@@ -1647,7 +1948,7 @@
                   organization, and legal writing workflows.</li>
               </ul>
               <div class="outcomes">
-                <div class="oc"><span class="oc-n">Legal Tech</span><span class="oc-l">Drafting Pioneer</span></div>
+                <a href="#projects" class="oc"><span class="oc-n">Legal Tech</span><span class="oc-l">Drafting Pioneer</span></a>
               </div>
             </div>
           </div>
@@ -1663,10 +1964,11 @@
               <ul class="exp-bullets">
                 <li>Led environmental campaigns protecting endangered ecosystems and wildlife in Belize (Scarlet Macaw
                   protection), Peru, and Mexico.</li>
+                <li>Work featured in the book <a href="https://www.amazon.com/Last-Flight-Scarlet-Macaw-Beautiful/dp/0812973135" target="_blank"><em>The Last Flight of the Scarlet Macaw</em> ↗</a> (read <a href="https://www.nytimes.com/2008/02/17/books/chapters/1st-chapter-last-flight-scarlet-macaw.html" target="_blank">NYT 1st Chapter Excerpt ↗</a>) and MTV's <a href="https://www.imdb.com/title/tt0454755/" target="_blank"><em>Trippin'</em> on IMDb ↗</a>.</li>
                 <li>Featured in international environmental coverage and legal advocacy publications.</li>
               </ul>
               <div class="outcomes">
-                <div class="oc"><span class="oc-n">BioGems</span><span class="oc-l">Wilderness Defense</span></div>
+                <a href="#esoterica" class="oc"><span class="oc-n">BioGems</span><span class="oc-l">Wilderness Defense</span></a>
               </div>
             </div>
           </div>
@@ -1685,9 +1987,9 @@
                 <li>Molecular biology research at Dana-Farber Cancer Institute & Yale University.</li>
               </ul>
               <div class="outcomes">
-                <div class="oc"><span class="oc-n">Caltech M.S.</span><span class="oc-l">Neural Computation</span></div>
-                <div class="oc"><span class="oc-n">Yale B.S.</span><span class="oc-l">Biophysics &amp; Biochem</span>
-                </div>
+                <a href="#education" class="oc"><span class="oc-n">Caltech M.S.</span><span class="oc-l">Neural Computation</span></a>
+                <a href="#education" class="oc"><span class="oc-n">Yale B.S.</span><span class="oc-l">Biophysics &amp; Biochem</span></a>
+              </div>
               </div>
             </div>
           </div>
@@ -1791,10 +2093,160 @@
             <div class="proj-tags"><span class="ptag green">Ukrainian Devs</span><span class="ptag">Consulting</span>
             </div>
             <div class="proj-org">DreamProIT / MriiaPro</div>
-            <div class="proj-title"><a href="https://dreamproit.com.ua/" target="_blank">US / Ukrainian Dev Engineering
+            <div class="proj-title"><a href="https://dreamproit.com/" target="_blank">US / Ukrainian Dev Engineering
                 Partnership ↗</a></div>
             <p class="proj-desc">Connecting U.S. technology leaders with top-tier Ukrainian software engineers to build
-              resilient, high-grade software solutions.</p>
+              resilient, high-grade software solutions. Read our insights at <a href="https://dreamproit.com/blog" target="_blank">dreamproit.com/blog ↗</a>.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PUBLICATIONS -->
+    <section id="publications">
+      <div class="section-wrap">
+        <div class="eyebrow">Scholarly &amp; Policy Contributions</div>
+        <h2 class="s-heading">Publications &amp; Research</h2>
+
+        <div class="pub-filters">
+          <button class="pub-filter-btn active" data-filter="all">All</button>
+          <button class="pub-filter-btn" data-filter="legislative">Legislative &amp; AI</button>
+          <button class="pub-filter-btn" data-filter="environment">Environment</button>
+          <button class="pub-filter-btn" data-filter="biomedical">Biomedical Science</button>
+        </div>
+
+        <div class="pub-grid">
+
+          <!-- Pub 1: AI Guidelines for Parliaments Book -->
+          <div class="pub-card" data-cat="legislative">
+            <div class="pub-meta-row">
+              <span class="pub-type">Book</span>
+              <span class="pub-date">2024 / Mar 2026</span>
+            </div>
+            <h3 class="pub-title">
+              <a href="https://www.researchgate.net/publication/386008447_Lignes_directrices_pour_l'IA_dans_les_parlements" target="_blank">
+                Guidelines for AI in Parliaments (Lignes directrices pour l'IA dans les parlements) ↗
+              </a>
+            </h3>
+            <div class="pub-authors">Fotios Fitsilis, Jörn Von Lucke, Franklin De Vrieze, Ari Hershowitz, Marci Harris, et al.</div>
+            <p class="pub-desc">
+              Comprehensive guidelines empowering parliaments worldwide to implement responsible, ethical, and effective artificial intelligence solutions while minimizing risks and upholding democratic integrity.
+            </p>
+            <div class="pub-langs">
+              <span class="pub-lang-lbl">Available Languages:</span>
+              <span class="pub-ltag">EN</span>
+              <span class="pub-ltag">FR</span>
+              <span class="pub-ltag">DE</span>
+              <span class="pub-ltag">UA</span>
+              <span class="pub-ltag">ES</span>
+              <span class="pub-ltag">PT</span>
+              <span class="pub-ltag">SQ</span>
+              <span class="pub-ltag">EL</span>
+              <span class="pub-ltag">ZH</span>
+            </div>
+          </div>
+
+          <!-- Pub 2: Executing US Bills into Law -->
+          <div class="pub-card" data-cat="legislative">
+            <div class="pub-meta-row">
+              <span class="pub-type">Book Chapter</span>
+              <span class="pub-date">Dec 2023</span>
+            </div>
+            <h3 class="pub-title">
+              <a href="https://www.researchgate.net/publication/376288607_Executing_United_States_Bills_into_Law" target="_blank">
+                Executing United States Bills into Law ↗
+              </a>
+            </h3>
+            <div class="pub-authors">Ari Hershowitz</div>
+            <p class="pub-desc">
+              Analysis of digital pipelines, legislative data structures, and automated drafting workflows converting Congressional bills into codified U.S. law. Published in <em>Immersive Technology and the Law</em>.
+            </p>
+          </div>
+
+          <!-- Pub 3: Comparative Prints Suite -->
+          <div class="pub-card" data-cat="legislative">
+            <div class="pub-meta-row">
+              <span class="pub-type">Book Chapter</span>
+              <span class="pub-date">Dec 2023</span>
+            </div>
+            <h3 class="pub-title">
+              <a href="https://www.researchgate.net/publication/376288514_Comparative_Prints_Suite_of_the_United_States_House_of_Representatives" target="_blank">
+                “Comparative Prints Suite” of the United States House of Representatives ↗
+              </a>
+            </h3>
+            <div class="pub-authors">Ari Hershowitz</div>
+            <p class="pub-desc">
+              Detailing the architecture and deployment of the automated text comparison suite built for the U.S. House of Representatives to show legislative changes in real time. Published in <em>Immersive Technology and the Law</em>.
+            </p>
+          </div>
+
+          <!-- Pub 4: Guidelines on Introduction of AI -->
+          <div class="pub-card" data-cat="legislative">
+            <div class="pub-meta-row">
+              <span class="pub-type">Data / Report</span>
+              <span class="pub-date">Apr 2023</span>
+            </div>
+            <h3 class="pub-title">
+              <a href="https://www.researchgate.net/publication/370258079_Guidelines_on_the_Introduction_and_Use_of_Artificial_Intelligence_in_Parliamentary_Workspace" target="_blank">
+                Guidelines on the Introduction and Use of Artificial Intelligence in Parliamentary Workspace ↗
+              </a>
+            </h3>
+            <div class="pub-authors">Fotios Fitsilis, Jörn Von Lucke, Franklin De Vrieze, Ari Hershowitz, et al.</div>
+            <p class="pub-desc">
+              Framework and recommendations for integrating AI capabilities into parliamentary legislative drafting, research, and constituent communications.
+            </p>
+          </div>
+
+          <!-- Pub 5: Belize Chalillo Dam -->
+          <div class="pub-card" data-cat="environment">
+            <div class="pub-meta-row">
+              <span class="pub-type">Journal Article</span>
+              <span class="pub-date">2008</span>
+            </div>
+            <h3 class="pub-title">
+              <a href="https://www.jstor.org/stable/44321074" target="_blank">
+                A Solid Foundation: Belize's Chalillo Dam and Environmental Decisionmaking ↗
+              </a>
+            </h3>
+            <div class="pub-authors">Ari Hershowitz</div>
+            <p class="pub-desc">
+              Analysis of environmental impact assessments, legal advocacy, and decision-making frameworks surrounding the dam project and habitat protection in Belize. Published in <em>Colorado Journal of International Environmental Law and Policy</em>.
+            </p>
+          </div>
+
+          <!-- Pub 6: MCP-1 Gene Transduction -->
+          <div class="pub-card" data-cat="biomedical">
+            <div class="pub-meta-row">
+              <span class="pub-type">Research Article</span>
+              <span class="pub-date">Nov 1995</span>
+            </div>
+            <h3 class="pub-title">
+              <a href="https://www.researchgate.net/profile/Ari-Hershowitz" target="_blank">
+                Monocyte Chemoattractant Protein-1 (MCP-1) Gene Transduction Inhibits Tumor Growth ↗
+              </a>
+            </h3>
+            <div class="pub-authors">R. Zhang, A. Hershowitz, et al.</div>
+            <p class="pub-desc">
+              Experimental study demonstrating tumor growth inhibition through viral vector-mediated MCP-1 gene delivery in animal models. Published in <em>Human Gene Therapy</em>.
+            </p>
+          </div>
+
+          <!-- Pub 7: Adenovirus-Mediated Gene-Transfer -->
+          <div class="pub-card" data-cat="biomedical">
+            <div class="pub-meta-row">
+              <span class="pub-type">Research Article</span>
+              <span class="pub-date">Feb 1995</span>
+            </div>
+            <h3 class="pub-title">
+              <a href="https://www.researchgate.net/profile/Ari-Hershowitz" target="_blank">
+                Parameters Affecting the Efficacy of Adenovirus-Mediated Gene-Transfer to Breast-Cancer Cells ↗
+              </a>
+            </h3>
+            <div class="pub-authors">A. Hershowitz, et al.</div>
+            <p class="pub-desc">
+              Investigating viral transduction efficiency parameters for gene therapy applications targeting breast cancer cells. Published in <em>Cancer Gene Therapy</em>.
+            </p>
           </div>
 
         </div>
@@ -1844,34 +2296,49 @@
       </div>
     </section>
 
-    <!-- ESOTERICA / WILDLIFE & SCIENCE -->
+    <!-- NEUROSCIENCE & CONSERVATION -->
     <section id="esoterica">
       <canvas id="wave-canvas"></canvas>
       <div class="esoterica-inner">
         <div class="eyebrow">Beyond the Code</div>
-        <h2 class="s-heading">Esoterica &amp; Conservation</h2>
+        <h2 class="s-heading">Neuroscience &amp; Conservation</h2>
 
         <div class="fun-grid">
           <div class="fun-card">
-            <div class="fun-icon">🦜</div>
+            <figure class="card-img-wrap">
+              <img src="assets/img/scarlet-macaw-cc.jpg" alt="Belize Scarlet Macaw: Wild Ara macao macao in flight over Yasuní. Photo by Charles J. Sharp / CC BY-SA 4.0" title="Belize Scarlet Macaw: Ara macao macao in flight. Photo by Charles J. Sharp (CC BY-SA 4.0)" class="fun-thumb-img">
+              <figcaption class="img-caption-overlay">
+                <strong>Belize Scarlet Macaw:</strong> Wild <em>Ara macao</em> in flight.
+                <span class="attr">Photo: Charles J. Sharp (<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" style="color:#93C5FD;text-decoration:underline;">CC BY-SA 4.0</a>)</span>
+              </figcaption>
+            </figure>
             <div class="fun-title">Belize Macaw Defense</div>
-            <div class="fun-sub">Led NRDC campaigns saving pristine habitats and the Scarlet Macaw in Belize. Articles
-              <a href="https://www.nrdc.org/media/2002/020214" target="_blank">here</a> &amp; <a
-                href="https://www.jstor.org/stable/44321074" target="_blank">JSTOR</a>.
-            </div>
+            <div class="fun-sub">Led NRDC campaigns saving pristine habitats and the Scarlet Macaw in Belize. Featured in <a href="https://www.amazon.com/Last-Flight-Scarlet-Macaw-Beautiful/dp/0812973135" target="_blank"><em>The Last Flight of the Scarlet Macaw</em> ↗</a> (<a href="https://www.nytimes.com/2008/02/17/books/chapters/1st-chapter-last-flight-scarlet-macaw.html" target="_blank">NYT Excerpt ↗</a>) &amp; <a href="https://www.jstor.org/stable/44321074" target="_blank">JSTOR ↗</a>.</div>
           </div>
 
           <div class="fun-card">
-            <div class="fun-icon">🐋</div>
-            <div class="fun-title">Leviathan's Lair</div>
+            <figure class="card-img-wrap">
+              <img src="assets/img/gray-whale-cc.jpg" alt="Pacific Gray Whale: Eschrichtius robustus breaching off coastal waters. Photo by Merrill Gosho / NOAA Fisheries (Public Domain)" title="Pacific Gray Whale: Eschrichtius robustus breaching. Photo by Merrill Gosho / NOAA Fisheries (Public Domain)" class="fun-thumb-img">
+              <figcaption class="img-caption-overlay">
+                <strong>Pacific Gray Whale:</strong> <em>Eschrichtius robustus</em> breaching.
+                <span class="attr">Photo: Merrill Gosho / NOAA (Public Domain)</span>
+              </figcaption>
+            </figure>
+            <div class="fun-title">Environmental Policy Advocate</div>
             <div class="fun-sub">Wildlife protection advocacy across Peru and Mexico's marine ecosystems. Article on
               Outside <a href="https://www.outsideonline.com/health/love-and-death-and-leviathans-lair/"
                 target="_blank">here</a>.</div>
           </div>
 
           <div class="fun-card">
-            <div class="fun-icon">🐝</div>
-            <div class="fun-title">Insect Brain Dynamics</div>
+            <figure class="card-img-wrap">
+              <img src="assets/img/fluorescent-neuron-cc.jpg" alt="Fluorescent Sensory Neurons: Confocal micrograph of GFP-stained neuronal cell bodies and dendrites. Photo by Rebecca Elsässer et al. / CC BY 2.0" title="Fluorescent Sensory Neurons: Confocal stack of GFP-stained neurons. Photo by Rebecca Elsässer et al. (CC BY 2.0)" class="fun-thumb-img">
+              <figcaption class="img-caption-overlay">
+                <strong>Fluorescent Sensory Neurons:</strong> Confocal micrograph of GFP-stained neurons.
+                <span class="attr">Photo: Rebecca Elsässer et al. (<a href="https://creativecommons.org/licenses/by/2.0/" target="_blank" style="color:#93C5FD;text-decoration:underline;">CC BY 2.0</a>)</span>
+              </figcaption>
+            </figure>
+            <div class="fun-title">Neural Networks and Insect Brains</div>
             <div class="fun-sub">Studied neural processing, signal transmission, and brain computation models at
               Caltech.</div>
           </div>
@@ -1879,21 +2346,21 @@
       </div>
     </section>
 
-    <!-- CONTACT -->
+    <!-- CONTACT INFO -->
     <section id="contact">
       <div class="contact-wrap">
-        <div class="eyebrow">Connect</div>
+        <div class="eyebrow">Contact Info</div>
         <h2 class="s-heading">Let's build something for the public good.</h2>
         <p class="contact-sub">Interested in legislative technology, Congressional AI, software engineering partnerships
           with Ukrainian devs, or public interest innovation? Reach out!</p>
 
         <div class="social-links-grid">
-          <a href="mailto:ari@linkedlegislation.com" class="soc-btn"><i class="fas fa-envelope"></i> Email Ari</a>
+          <a href="mailto:arihershowitz@dreamproit.com" class="soc-btn"><i class="fas fa-envelope"></i> Email Ari</a>
           <a href="https://github.com/aih" target="_blank" class="soc-btn"><i class="fab fa-github"></i> GitHub</a>
           <a href="https://linkedin.com/in/ari-hershowitz" target="_blank" class="soc-btn"><i
               class="fab fa-linkedin"></i> LinkedIn</a>
-          <a href="https://twitter.com/arihersh" target="_blank" class="soc-btn"><i class="fab fa-twitter"></i>
-            Twitter</a>
+          <a href="https://blog.linkedlegislation.org" target="_blank" class="soc-btn"><i class="fas fa-rss"></i> Legislative Blog</a>
+          <a href="https://dreamproit.com/blog" target="_blank" class="soc-btn"><i class="fas fa-blog"></i> Tech Leadership Blog</a>
           <a href="https://stackoverflow.com/users/628748/ari" target="_blank" class="soc-btn"><i
               class="fab fa-stack-overflow"></i> StackOverflow</a>
         </div>
@@ -1901,7 +2368,7 @@
     </section>
 
     <footer>
-      <p>© 2026 Ari Hershowitz · <a href="mailto:ari@linkedlegislation.com">ari@linkedlegislation.com</a> · Powered by
+      <p>© 2026 Ari Hershowitz · <a href="mailto:arihershowitz@dreamproit.com">arihershowitz@dreamproit.com</a> · Powered by
         GitHub Pages</p>
     </footer>
 
@@ -1968,12 +2435,29 @@
       reveal('.cat-card');
       reveal('.exp-row');
       reveal('.proj-card');
+      reveal('.pub-card');
       reveal('.edu-card');
       reveal('.fun-card');
       reveal('.skill-card');
       setTimeout(() => {
-        document.querySelectorAll('.cat-card, .exp-row, .proj-card, .edu-card, .fun-card, .skill-card').forEach(el => el.classList.add('vis'));
+        document.querySelectorAll('.cat-card, .exp-row, .proj-card, .pub-card, .edu-card, .fun-card, .skill-card').forEach(el => el.classList.add('vis'));
       }, 500);
+
+      /* ── PUBLICATION FILTERS ── */
+      document.querySelectorAll('.pub-filter-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          document.querySelectorAll('.pub-filter-btn').forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          const f = btn.dataset.filter;
+          document.querySelectorAll('.pub-card').forEach(card => {
+            if (f === 'all' || card.dataset.cat === f) {
+              card.classList.remove('pub-hidden');
+            } else {
+              card.classList.add('pub-hidden');
+            }
+          });
+        });
+      });
 
       /* ── HERO CANVAS — floating network ── */
       (function () {
