@@ -24,14 +24,14 @@ about_draft: |-
 
   As founder of DreamProIT, I direct a US/Ukrainian engineering team delivering full-stack, cloud, and AI-driven software for legal, civic tech, and enterprise clients. As a longtime innovation lead in legal technology, I helped the U.S. House Office of the Clerk, House Office of Legislative Counsel, Law Revision Counsel, and GPO introduce XML-based legislative drafting and automated document comparison — including a U.S. patent (20190354636) for comparing hierarchical legislative texts, and work recognized by the House Select Committee on the Modernization of Congress.
 
-  I write and speak on AI in legislatures and parliaments (co-author, Guidelines for AI in Parliaments), and I'm always glad to connect with people working on legal tech, GovTech, AI policy, or building engineering teams with Ukraine.
+  I write and speak on AI in legislatures and parliaments (co-author, Guidelines for AI in Parliaments), and teach lawyers, legislators, and other professionals the fundamentals of AI — how LLMs work, what they do well, and where they fail. I'm always glad to connect with people working on legal tech, GovTech, AI policy, or building engineering teams with Ukraine.
 
 Reach out: arihershowitz@dreamproit.com
 
 experience:
   - company: DreamProIT / MriiaPro
-    role: Founder & CEO
-    start: "2022"
+    role: CEO and Director of Engineering
+    start: "2022-03"
     end: present
     location: US / Ukraine
     bullets:
@@ -50,8 +50,8 @@ experience:
           url: "https://modernizecongress.house.gov/",
         }
 
-  - company: Ad Hoc
-    role: Digital Services Engineer
+  - company: Ad Hoc LLC
+    role: Director of Engineering, Federal Civilian
     start: "2024-06"
     end: "2026-06"
     location: Remote
@@ -61,9 +61,9 @@ experience:
       - Prototyped new technical approaches, including conversion of US copyright guidelines from PDF to semantic HTML for accessibility and web publishing quality.
       - Supported standards-driven content modernization for government-facing workflows.
 
-  - company: Xcential Corporation
-    role: Director of Innovation (Consultant)
-    start: "2011"
+  - company: Xcential Legislative Technologies
+    role: Chief Innovation Officer (Consultant)
+    start: "2012-10"
     end: "2024-06"
     location: California / Remote
     bullets:
@@ -77,20 +77,20 @@ experience:
 
   - company: Tabulaw
     role: Founder & CEO
-    start: "2008"
-    end: "2011"
+    start: "2009-01"
+    end: "2013-07"
     location: California
     bullets:
       - Pioneered web-based legal research and drafting tools: citation management, snippet organization, legal writing workflows.
 
   - company: Natural Resources Defense Council (NRDC)
     role: Director, Latin American BioGems Program
-    start: "1999"
-    end: "2001"
+    start: "1999-01"
+    end: "2008-03"
     location: Latin America
     bullets:
       - Led environmental campaigns protecting endangered ecosystems and wildlife in Belize, Peru, and Mexico.
-      - Work featured in "The Last Flight of the Scarlet Macaw" and MTV's "Trippin'".
+      - Work featured in NYT, LA Times, CNN, "The Last Flight of the Scarlet Macaw" by Bruce Barcott, and MTV's "Trippin'".
 
 education:
   - degree: Juris Doctorate (J.D.)
@@ -169,6 +169,10 @@ publications:
     authors: [A. Hershowitz, "et al."]
 
 talks:
+  - title: "LLMs for Legislative Information: What Do We Mean When We Say AI?"
+    venue: InstaTrac Single State Service Conference
+    date: "2025-09-25"
+    url: https://docs.google.com/presentation/d/1s9VOBdBUl6HNM5jipyuTAAEU7tE_Uu0EISVtOSL9c9o/edit
   - title: Modernizing Law with Git & Open Standards
     venue: Git Satellite Brussels
     url: https://www.youtube.com/watch?v=SmLpJEZyvI0
