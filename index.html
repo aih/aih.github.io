@@ -44,10 +44,14 @@
         --cream: #F7F4EE;
         --warm: #FFFFFF;
         --sand: #EAE5DC;
-        --red: #2563EB; /* Accessible Vibrant Royal Blue */
-        --red-light: #EFF6FF; /* Soft Sky Blue Tint */
-        --red-dark: #1E40AF; /* Deep Navy Blue */
-        --sage: #1E3A8A; /* Deep Navy Blue Container */
+        --red: #2563EB;
+        /* Accessible Vibrant Royal Blue */
+        --red-light: #EFF6FF;
+        /* Soft Sky Blue Tint */
+        --red-dark: #1E40AF;
+        /* Deep Navy Blue */
+        --sage: #1E3A8A;
+        /* Deep Navy Blue Container */
         --sage-light: #E0F2FE;
         --ink: #0f0f0f;
         --ink2: #2e2e2e;
@@ -493,7 +497,8 @@
       }
 
       .stats-strip {
-        background: #1E3A8A; /* Deep Navy Blue */
+        background: #1E3A8A;
+        /* Deep Navy Blue */
         border-radius: 1.5rem;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -521,7 +526,8 @@
       }
 
       .stat-num span {
-        color: #93C5FD; /* Bright Ice Blue for 100% colorblind readability */
+        color: #93C5FD;
+        /* Bright Ice Blue for 100% colorblind readability */
       }
 
       .stat-label {
@@ -842,7 +848,8 @@
       }
 
       .img-caption-overlay strong {
-        color: #93C5FD; /* Bright sky blue for maximum colorblind contrast */
+        color: #93C5FD;
+        /* Bright sky blue for maximum colorblind contrast */
         font-weight: 600;
       }
 
@@ -972,27 +979,7 @@
         overflow: hidden;
         opacity: 0;
         transform: translateY(22px);
-        transition: opacity 0.5s, transform 0.5s, background 0.22s, border-color 0.22s, box-shadow 0.22s;
-      }
-
-      .skill-card::before {
-        content: '';
-        position: absolute;
-        inset: 0;
-        background: linear-gradient(135deg, rgba(211, 63, 36, 0.14), transparent);
-        opacity: 0;
-        transition: opacity 0.3s;
-      }
-
-      .skill-card:hover {
-        background: rgba(255, 255, 255, 0.07);
-        border-color: rgba(211, 63, 36, 0.38);
-        transform: translateY(-3px) !important;
-        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
-      }
-
-      .skill-card:hover::before {
-        opacity: 1;
+        transition: opacity 0.5s, transform 0.5s;
       }
 
       .skill-card.vis {
@@ -1005,7 +992,7 @@
         font-weight: 700;
         letter-spacing: 0.1em;
         text-transform: uppercase;
-        color: rgba(211, 63, 36, 0.85);
+        color: rgba(96, 165, 250, 0.95);
         margin-bottom: 0.45rem;
       }
 
@@ -1690,7 +1677,6 @@
         <li><a href="#experience">Experience</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#publications">Publications</a></li>
-        <li><a href="https://dreamproit.com/" target="_blank">Consulting ↗</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
       <a href="mailto:arihershowitz@dreamproit.com" class="nav-cta">Email me</a>
@@ -1704,7 +1690,6 @@
       <a href="#experience" onclick="closeMob()">Experience</a>
       <a href="#projects" onclick="closeMob()">Projects</a>
       <a href="#publications" onclick="closeMob()">Publications</a>
-      <a href="https://dreamproit.com/" target="_blank" onclick="closeMob()">Consulting ↗</a>
       <a href="#contact" onclick="closeMob()">Contact</a>
       <a href="mailto:arihershowitz@dreamproit.com" style="color:var(--red)">Email me</a>
     </div>
@@ -1716,7 +1701,7 @@
         <div class="hero-text">
           <h1 id="hero-h1"></h1>
           <p class="hero-p" style="animation-delay:0.55s">I'm Ari Hershowitz — an attorney (J.D. Georgetown, California
-            Bar) and engineer who <strong>invented patented legal tech, brought the first AI tools to the U.S.
+            Bar) and software engineer who <strong>invented patented legal tech, brought the first AI tools to the U.S.
               Congress,</strong> and teaches lawyers and other professionals the fundamentals of AI.
           </p>
           <p class="hero-p" style="animation-delay:0.7s">I lead <strong><a href="https://dreamproit.com/"
@@ -1783,15 +1768,18 @@
           <!-- Category 1: Legal Technology -->
           <div class="cat-card">
             <span class="cat-tag">Core Discipline</span>
-            <h3 class="cat-title"><a href="#projects" style="color:inherit;text-decoration:none;">Legal Technology ↗</a></h3>
+            <h3 class="cat-title"><a href="#projects" style="color:inherit;text-decoration:none;">Legal Technology ↗</a>
+            </h3>
             <p class="cat-desc">Architecting next-generation drafting, comparison, and legislative XML infrastructure
               for statutory bodies and legal professionals.</p>
             <ul class="cat-bullets">
-              <li><strong>Chief Innovation Officer (consultant), Xcential Legislative Technologies</strong> (Oct 2012–June 2024)</li>
+              <li><strong>Chief Innovation Officer (consultant), Xcential Legislative Technologies</strong> (Oct
+                2012–June 2024)</li>
               <li>Collaborated with House Office of the Clerk, House Office of Legislative Counsel, Law Revision
                 Counsel, and the Government Publishing Office to introduce XML-based
                 automation and legislative tracking tools.</li>
-              <li><strong>Blog:</strong> <a href="https://blog.linkedlegislation.org" target="_blank">blog.linkedlegislation.org ↗</a> — Legislative XML &amp; legal tech</li>
+              <li><strong>Blog:</strong> <a href="https://blog.linkedlegislation.org"
+                  target="_blank">blog.linkedlegislation.org ↗</a> — Legislative XML &amp; legal tech</li>
               <li><strong>Inventor:</strong> U.S. Patent <a href="https://uspto.report/patent/app/20190354636"
                   target="_blank">20190354636</a> for Document Comparison of Legislative Texts</li>
               <li><strong>Founder & CEO</strong> of Tabulaw (2008–2011) — legal drafting software</li>
@@ -1802,7 +1790,8 @@
           <!-- Category 2: First AI in Congress -->
           <div class="cat-card">
             <span class="cat-tag">Innovation</span>
-            <h3 class="cat-title"><a href="#projects" style="color:inherit;text-decoration:none;">First AI in Congress ↗</a></h3>
+            <h3 class="cat-title"><a href="#projects" style="color:inherit;text-decoration:none;">First AI in Congress
+                ↗</a></h3>
             <p class="cat-desc">Pioneering AI, automated text comparison, and intelligent workflow tools to modernize
               the United States House of Representatives.</p>
             <ul class="cat-bullets">
@@ -1812,27 +1801,33 @@
               <li>Speaker at <a href="https://www.youtube.com/watch?v=SmLpJEZyvI0" target="_blank">Git Satellite
                   Brussels</a> on legislative modernization</li>
               <li>Deploying automated comparison & LLM-driven legislative analysis</li>
-              <li><a href="#ai-education">Educating lawyers &amp; legislative professionals on AI fundamentals →</a></li>
+              <li><a href="#ai-education">Educating lawyers &amp; legislative professionals on AI fundamentals →</a>
+              </li>
             </ul>
           </div>
 
           <!-- Category 3: Ukrainian Devs -->
           <div class="cat-card">
             <figure class="card-img-wrap">
-              <img src="assets/img/ari-ukraine-mountain.jpg" alt="Ari Hershowitz in the Carpathian Mountains, Ukraine (Personal Collection)" title="Ukrainian Devs: Ari Hershowitz in the Carpathian Mountains, Ukraine (Photo: Personal Collection)" class="cat-thumb-img">
+              <img src="assets/img/ari-ukraine-mountain.jpg"
+                alt="Ari Hershowitz in the Carpathian Mountains, Ukraine (Personal Collection)"
+                title="Ukrainian Devs: Ari Hershowitz in the Carpathian Mountains, Ukraine (Photo: Personal Collection)"
+                class="cat-thumb-img">
               <figcaption class="img-caption-overlay">
                 <strong>Ukrainian Devs:</strong> Ari Hershowitz in the Carpathian Mountains, Ukraine.
                 <span class="attr">(Photo: Personal Collection)</span>
               </figcaption>
             </figure>
             <span class="cat-tag">Global Engineering</span>
-            <h3 class="cat-title"><a href="https://dreamproit.com/" target="_blank" style="color:inherit;text-decoration:none;">Ukrainian Devs ↗</a></h3>
+            <h3 class="cat-title"><a href="https://dreamproit.com/" target="_blank"
+                style="color:inherit;text-decoration:none;">Ukrainian Devs ↗</a></h3>
             <p class="cat-desc">Building and managing elite software engineering teams with top Ukrainian talent to
               build state-of-the-art applications.</p>
             <ul class="cat-bullets">
               <li><strong>Founder:</strong> <a href="https://dreamproit.com/" target="_blank">DreamProIT</a> /
                 MriiaPro (2022–Present)</li>
-              <li><strong>Blog:</strong> <a href="https://dreamproit.com/blog" target="_blank">dreamproit.com/blog ↗</a> — Engineering leadership &amp; agile teams</li>
+              <li><strong>Blog:</strong> <a href="https://dreamproit.com/blog" target="_blank">dreamproit.com/blog ↗</a>
+                — Engineering leadership &amp; agile teams</li>
               <li>US/Ukrainian high-performance software engineering & consulting</li>
               <li>Delivering mission-critical public interest and enterprise tools</li>
               <li>Championing talent, resilience, and software craft under pressure</li>
@@ -1842,14 +1837,16 @@
           <!-- Category 4: Neuroscience & Conservation -->
           <div class="cat-card">
             <figure class="card-img-wrap">
-              <img src="assets/img/ari-windsurfing.jpg" alt="Ari Hershowitz windsurfing (Personal Collection)" title="Windsurfing: Ari Hershowitz in action (Photo: Personal Collection)" class="cat-thumb-img">
+              <img src="assets/img/ari-windsurfing.jpg" alt="Ari Hershowitz windsurfing (Personal Collection)"
+                title="Windsurfing: Ari Hershowitz in action (Photo: Personal Collection)" class="cat-thumb-img">
               <figcaption class="img-caption-overlay">
                 <strong>Windsurfing:</strong> Ari Hershowitz in action.
                 <span class="attr">(Photo: Personal Collection)</span>
               </figcaption>
             </figure>
             <span class="cat-tag">Interdisciplinary Science</span>
-            <h3 class="cat-title"><a href="#esoterica" style="color:inherit;text-decoration:none;">Neuroscience &amp; Conservation ↗</a></h3>
+            <h3 class="cat-title"><a href="#esoterica" style="color:inherit;text-decoration:none;">Neuroscience &amp;
+                Conservation ↗</a></h3>
             <p class="cat-desc">From insect neural computation to rainforest conservation and cancer genetics—a lifelong
               journey exploring complex systems.</p>
             <ul class="cat-bullets">
@@ -1893,11 +1890,10 @@
 
           <div class="proj-card">
             <div class="proj-tags"><span class="ptag hot">Guidelines</span><span class="ptag green">Parliaments</span>
-              <span class="ptag">9 Languages</span></div>
+              <span class="ptag">9 Languages</span>
+            </div>
             <div class="proj-org">Co-author · 2023–2026</div>
-            <div class="proj-title"><a
-                href="https://www.researchgate.net/publication/386008447_Lignes_directrices_pour_l'IA_dans_les_parlements"
-                target="_blank">Guidelines for AI in Parliaments ↗</a></div>
+            <div class="proj-title">Guidelines for AI in Parliaments</div>
             <p class="proj-desc">Co-authored international guidelines helping parliaments worldwide adopt AI
               responsibly — translated into nine languages and used to train legislative staff on ethical, effective
               AI implementation. See more in <a href="#publications">Publications</a>.</p>
@@ -1912,7 +1908,8 @@
             <p class="proj-desc">Practical sessions for attorneys, policy teams, and executives: what AI can and
               cannot do, evaluating AI tools and vendors, and building responsible AI workflows for legal practice.
               <a href="mailto:arihershowitz@dreamproit.com?subject=AI%20Education%20Session">Email me to schedule a
-                session</a>.</p>
+                session</a>.
+            </p>
           </div>
 
         </div>
@@ -1977,8 +1974,12 @@
             <div>
               <div class="exp-role">Chief Innovation Officer (Consultant)</div>
               <ul class="exp-bullets">
-                <li>Led legal and legislative software innovation, collaborating with the U.S. House Office of the Clerk, House Office of Legislative Counsel, Law Revision Counsel, and GPO to introduce XML-based automation and legislative tracking tools.</li>
-                <li>Invented patented document comparison technology for legislative texts (<a href="https://uspto.report/patent/app/20190354636" target="_blank">U.S. Patent 20190354636 ↗</a>). See overview in the <a href="#categories">Legal Technology</a> section above.</li>
+                <li>Led legal and legislative software innovation, collaborating with the U.S. House Office of the
+                  Clerk, House Office of Legislative Counsel, Law Revision Counsel, and GPO to introduce XML-based
+                  automation and legislative tracking tools.</li>
+                <li>Invented patented document comparison technology for legislative texts (<a
+                    href="https://uspto.report/patent/app/20190354636" target="_blank">U.S. Patent 20190354636 ↗</a>).
+                  See overview in the <a href="#categories">Legal Technology</a> section above.</li>
               </ul>
             </div>
           </div>
@@ -2010,7 +2011,12 @@
               <ul class="exp-bullets">
                 <li>Led environmental campaigns protecting endangered ecosystems and wildlife in Belize (Scarlet Macaw
                   protection), Peru, and Mexico.</li>
-                <li>Work featured in NYT, LA Times, and CNN, and in the book <a href="https://www.amazon.com/Last-Flight-Scarlet-Macaw-Beautiful/dp/0812973135" target="_blank"><em>The Last Flight of the Scarlet Macaw</em> ↗</a> by Bruce Barcott (read <a href="https://www.nytimes.com/2008/02/17/books/chapters/1st-chapter-last-flight-scarlet-macaw.html" target="_blank">NYT 1st Chapter Excerpt ↗</a>) and MTV's <a href="https://www.imdb.com/title/tt0454755/" target="_blank"><em>Trippin'</em> on IMDb ↗</a>.</li>
+                <li>Work featured in NYT, LA Times, and CNN, and in the book <a
+                    href="https://www.amazon.com/Last-Flight-Scarlet-Macaw-Beautiful/dp/0812973135"
+                    target="_blank"><em>The Last Flight of the Scarlet Macaw</em> ↗</a> by Bruce Barcott (read <a
+                    href="https://www.nytimes.com/2008/02/17/books/chapters/1st-chapter-last-flight-scarlet-macaw.html"
+                    target="_blank">NYT 1st Chapter Excerpt ↗</a>) and MTV's <a
+                    href="https://www.imdb.com/title/tt0454755/" target="_blank"><em>Trippin'</em> on IMDb ↗</a>.</li>
                 <li>Featured in international environmental coverage and legal advocacy publications.</li>
               </ul>
 
@@ -2041,9 +2047,8 @@
     <section id="tech">
       <canvas id="tech-canvas"></canvas>
       <div class="tech-inner">
-        <div class="eyebrow" style="color:rgba(211,63,36,0.85)">Skills &amp; Methodologies</div>
+        <div class="eyebrow" style="color:rgba(96,165,250,0.95)">Skills &amp; Methodologies</div>
         <div class="tech-heading-white">Tech Stack &amp; Capabilities</div>
-        <p class="tech-sub">Move your cursor through the particle field to interact</p>
 
         <div class="skill-grid">
           <div class="skill-card" style="transition-delay:0.04s">
@@ -2135,7 +2140,8 @@
             <div class="proj-title"><a href="https://dreamproit.com/" target="_blank">US / Ukrainian Dev Engineering
                 Partnership ↗</a></div>
             <p class="proj-desc">Connecting U.S. technology leaders with top-tier Ukrainian software engineers to build
-              resilient, high-grade software solutions. Read our insights at <a href="https://dreamproit.com/blog" target="_blank">dreamproit.com/blog ↗</a>.</p>
+              resilient, high-grade software solutions. Read our insights at <a href="https://dreamproit.com/blog"
+                target="_blank">dreamproit.com/blog ↗</a>.</p>
           </div>
 
         </div>
@@ -2164,13 +2170,13 @@
               <span class="pub-date">2024 / Mar 2026</span>
             </div>
             <h3 class="pub-title">
-              <a href="https://www.researchgate.net/publication/386008447_Lignes_directrices_pour_l'IA_dans_les_parlements" target="_blank">
-                Guidelines for AI in Parliaments (Lignes directrices pour l'IA dans les parlements) ↗
-              </a>
+              Guidelines for AI in Parliaments (Lignes directrices pour l'IA dans les parlements)
             </h3>
-            <div class="pub-authors">Fotios Fitsilis, Jörn Von Lucke, Franklin De Vrieze, Ari Hershowitz, Marci Harris, et al.</div>
+            <div class="pub-authors">Fotios Fitsilis, Jörn Von Lucke, Franklin De Vrieze, Ari Hershowitz, Marci Harris,
+              et al.</div>
             <p class="pub-desc">
-              Comprehensive guidelines empowering parliaments worldwide to implement responsible, ethical, and effective artificial intelligence solutions while minimizing risks and upholding democratic integrity.
+              Comprehensive guidelines empowering parliaments worldwide to implement responsible, ethical, and effective
+              artificial intelligence solutions while minimizing risks and upholding democratic integrity.
             </p>
             <div class="pub-langs">
               <span class="pub-lang-lbl">Available Languages:</span>
@@ -2193,13 +2199,15 @@
               <span class="pub-date">Dec 2023</span>
             </div>
             <h3 class="pub-title">
-              <a href="https://www.researchgate.net/publication/376288607_Executing_United_States_Bills_into_Law" target="_blank">
+              <a href="https://doi.org/10.3233/FAIA230969"
+                target="_blank">
                 Executing United States Bills into Law ↗
               </a>
             </h3>
             <div class="pub-authors">Ari Hershowitz</div>
             <p class="pub-desc">
-              Analysis of digital pipelines, legislative data structures, and automated drafting workflows converting Congressional bills into codified U.S. law. Published in <em>Immersive Technology and the Law</em>.
+              Analysis of digital pipelines, legislative data structures, and automated drafting workflows converting
+              Congressional bills into codified U.S. law. Published in <em>Immersive Technology and the Law</em>.
             </p>
           </div>
 
@@ -2210,30 +2218,16 @@
               <span class="pub-date">Dec 2023</span>
             </div>
             <h3 class="pub-title">
-              <a href="https://www.researchgate.net/publication/376288514_Comparative_Prints_Suite_of_the_United_States_House_of_Representatives" target="_blank">
+              <a href="https://doi.org/10.3233/FAIA230993"
+                target="_blank">
                 “Comparative Prints Suite” of the United States House of Representatives ↗
               </a>
             </h3>
             <div class="pub-authors">Ari Hershowitz</div>
             <p class="pub-desc">
-              Detailing the architecture and deployment of the automated text comparison suite built for the U.S. House of Representatives to show legislative changes in real time. Published in <em>Immersive Technology and the Law</em>.
-            </p>
-          </div>
-
-          <!-- Pub 4: Guidelines on Introduction of AI -->
-          <div class="pub-card" data-cat="legislative">
-            <div class="pub-meta-row">
-              <span class="pub-type">Data / Report</span>
-              <span class="pub-date">Apr 2023</span>
-            </div>
-            <h3 class="pub-title">
-              <a href="https://www.researchgate.net/publication/370258079_Guidelines_on_the_Introduction_and_Use_of_Artificial_Intelligence_in_Parliamentary_Workspace" target="_blank">
-                Guidelines on the Introduction and Use of Artificial Intelligence in Parliamentary Workspace ↗
-              </a>
-            </h3>
-            <div class="pub-authors">Fotios Fitsilis, Jörn Von Lucke, Franklin De Vrieze, Ari Hershowitz, et al.</div>
-            <p class="pub-desc">
-              Framework and recommendations for integrating AI capabilities into parliamentary legislative drafting, research, and constituent communications.
+              Detailing the architecture and deployment of the automated text comparison suite built for the U.S. House
+              of Representatives to show legislative changes in real time. Published in <em>Immersive Technology and the
+                Law</em>.
             </p>
           </div>
 
@@ -2250,7 +2244,9 @@
             </h3>
             <div class="pub-authors">Ari Hershowitz</div>
             <p class="pub-desc">
-              Analysis of environmental impact assessments, legal advocacy, and decision-making frameworks surrounding the dam project and habitat protection in Belize. Published in <em>Colorado Journal of International Environmental Law and Policy</em>.
+              Analysis of environmental impact assessments, legal advocacy, and decision-making frameworks surrounding
+              the dam project and habitat protection in Belize. Published in <em>Colorado Journal of International
+                Environmental Law and Policy</em>.
             </p>
           </div>
 
@@ -2267,7 +2263,8 @@
             </h3>
             <div class="pub-authors">R. Zhang, A. Hershowitz, et al.</div>
             <p class="pub-desc">
-              Experimental study demonstrating tumor growth inhibition through viral vector-mediated MCP-1 gene delivery in animal models. Published in <em>Human Gene Therapy</em>.
+              Experimental study demonstrating tumor growth inhibition through viral vector-mediated MCP-1 gene delivery
+              in animal models. Published in <em>Human Gene Therapy</em>.
             </p>
           </div>
 
@@ -2284,7 +2281,8 @@
             </h3>
             <div class="pub-authors">A. Hershowitz, et al.</div>
             <p class="pub-desc">
-              Investigating viral transduction efficiency parameters for gene therapy applications targeting breast cancer cells. Published in <em>Cancer Gene Therapy</em>.
+              Investigating viral transduction efficiency parameters for gene therapy applications targeting breast
+              cancer cells. Published in <em>Cancer Gene Therapy</em>.
             </p>
           </div>
 
@@ -2345,19 +2343,31 @@
         <div class="fun-grid">
           <div class="fun-card">
             <figure class="card-img-wrap">
-              <img src="assets/img/scarlet-macaw-cc.jpg" alt="Belize Scarlet Macaw: Wild Ara macao macao in flight over Yasuní. Photo by Charles J. Sharp / CC BY-SA 4.0" title="Belize Scarlet Macaw: Ara macao macao in flight. Photo by Charles J. Sharp (CC BY-SA 4.0)" class="fun-thumb-img">
+              <img src="assets/img/scarlet-macaw-cc.jpg"
+                alt="Belize Scarlet Macaw: Wild Ara macao macao in flight over Yasuní. Photo by Charles J. Sharp / CC BY-SA 4.0"
+                title="Belize Scarlet Macaw: Ara macao macao in flight. Photo by Charles J. Sharp (CC BY-SA 4.0)"
+                class="fun-thumb-img">
               <figcaption class="img-caption-overlay">
                 <strong>Belize Scarlet Macaw:</strong> Wild <em>Ara macao</em> in flight.
-                <span class="attr">Photo: Charles J. Sharp (<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" style="color:#93C5FD;text-decoration:underline;">CC BY-SA 4.0</a>)</span>
+                <span class="attr">Photo: Charles J. Sharp (<a href="https://creativecommons.org/licenses/by-sa/4.0/"
+                    target="_blank" style="color:#93C5FD;text-decoration:underline;">CC BY-SA 4.0</a>)</span>
               </figcaption>
             </figure>
             <div class="fun-title">Belize Macaw Defense</div>
-            <div class="fun-sub">Led NRDC campaigns saving pristine habitats and the Scarlet Macaw in Belize. Featured in <a href="https://www.amazon.com/Last-Flight-Scarlet-Macaw-Beautiful/dp/0812973135" target="_blank"><em>The Last Flight of the Scarlet Macaw</em> ↗</a> (<a href="https://www.nytimes.com/2008/02/17/books/chapters/1st-chapter-last-flight-scarlet-macaw.html" target="_blank">NYT Excerpt ↗</a>) &amp; <a href="https://www.jstor.org/stable/44321074" target="_blank">JSTOR ↗</a>.</div>
+            <div class="fun-sub">Led NRDC campaigns saving pristine habitats and the Scarlet Macaw in Belize. Featured
+              in <a href="https://www.amazon.com/Last-Flight-Scarlet-Macaw-Beautiful/dp/0812973135"
+                target="_blank"><em>The Last Flight of the Scarlet Macaw</em> ↗</a> (<a
+                href="https://www.nytimes.com/2008/02/17/books/chapters/1st-chapter-last-flight-scarlet-macaw.html"
+                target="_blank">NYT Excerpt ↗</a>) &amp; <a href="https://www.jstor.org/stable/44321074"
+                target="_blank">JSTOR ↗</a>.</div>
           </div>
 
           <div class="fun-card">
             <figure class="card-img-wrap">
-              <img src="assets/img/gray-whale-cc.jpg" alt="Pacific Gray Whale: Eschrichtius robustus breaching off coastal waters. Photo by Merrill Gosho / NOAA Fisheries (Public Domain)" title="Pacific Gray Whale: Eschrichtius robustus breaching. Photo by Merrill Gosho / NOAA Fisheries (Public Domain)" class="fun-thumb-img">
+              <img src="assets/img/gray-whale-cc.jpg"
+                alt="Pacific Gray Whale: Eschrichtius robustus breaching off coastal waters. Photo by Merrill Gosho / NOAA Fisheries (Public Domain)"
+                title="Pacific Gray Whale: Eschrichtius robustus breaching. Photo by Merrill Gosho / NOAA Fisheries (Public Domain)"
+                class="fun-thumb-img">
               <figcaption class="img-caption-overlay">
                 <strong>Pacific Gray Whale:</strong> <em>Eschrichtius robustus</em> breaching.
                 <span class="attr">Photo: Merrill Gosho / NOAA (Public Domain)</span>
@@ -2371,10 +2381,16 @@
 
           <div class="fun-card">
             <figure class="card-img-wrap">
-              <img src="assets/img/locust-neuron-2photon-cc.jpg" alt="Locust Projection Neuron: In vivo two-photon microscopy image of an OGB-1 filled projection neuron in the locust antennal lobe. Photo by Laurent Moreaux &amp; Gilles Laurent / Frontiers in Neural Circuits (CC BY)" title="Locust Projection Neuron: In vivo two-photon microscopy in the locust antennal lobe. Photo by Laurent Moreaux &amp; Gilles Laurent (CC BY)" class="fun-thumb-img">
+              <img src="assets/img/locust-neuron-2photon-cc.jpg"
+                alt="Locust Projection Neuron: In vivo two-photon microscopy image of an OGB-1 filled projection neuron in the locust antennal lobe. Photo by Laurent Moreaux &amp; Gilles Laurent / Frontiers in Neural Circuits (CC BY)"
+                title="Locust Projection Neuron: In vivo two-photon microscopy in the locust antennal lobe. Photo by Laurent Moreaux &amp; Gilles Laurent (CC BY)"
+                class="fun-thumb-img">
               <figcaption class="img-caption-overlay">
-                <strong>Locust Projection Neuron:</strong> <em>In vivo</em> 2-photon microscopy of a projection neuron in the locust antennal lobe.
-                <span class="attr">Photo: Laurent Moreaux &amp; Gilles Laurent (<a href="https://doi.org/10.3389/neuro.04.002.2007" target="_blank" style="color:#93C5FD;text-decoration:underline;">Frontiers / CC BY</a>)</span>
+                <strong>Locust Projection Neuron:</strong> <em>In vivo</em> 2-photon microscopy of a projection neuron
+                in the locust antennal lobe.
+                <span class="attr">Photo: Laurent Moreaux &amp; Gilles Laurent (<a
+                    href="https://doi.org/10.3389/neuro.04.002.2007" target="_blank"
+                    style="color:#93C5FD;text-decoration:underline;">Frontiers / CC BY</a>)</span>
               </figcaption>
             </figure>
             <div class="fun-title">Neural Networks and Insect Brains</div>
@@ -2401,8 +2417,10 @@
           <a href="https://github.com/aih" target="_blank" class="soc-btn"><i class="fab fa-github"></i> GitHub</a>
           <a href="https://linkedin.com/in/ari-hershowitz" target="_blank" class="soc-btn"><i
               class="fab fa-linkedin"></i> LinkedIn</a>
-          <a href="https://blog.linkedlegislation.org" target="_blank" class="soc-btn"><i class="fas fa-rss"></i> Legislative Blog</a>
-          <a href="https://dreamproit.com/blog" target="_blank" class="soc-btn"><i class="fas fa-blog"></i> Tech Leadership Blog</a>
+          <a href="https://blog.linkedlegislation.org" target="_blank" class="soc-btn"><i class="fas fa-rss"></i>
+            Legislative Blog</a>
+          <a href="https://dreamproit.com/blog" target="_blank" class="soc-btn"><i class="fas fa-blog"></i> Tech
+            Leadership Blog</a>
           <a href="https://stackoverflow.com/users/628748/ari" target="_blank" class="soc-btn"><i
               class="fab fa-stack-overflow"></i> StackOverflow</a>
         </div>
@@ -2410,8 +2428,10 @@
     </section>
 
     <footer>
-      <p>© 2026 Ari Hershowitz · <a href="mailto:arihershowitz@dreamproit.com">arihershowitz@dreamproit.com</a> · Powered by
-        GitHub Pages · Design inspired by <a href="https://chehaka.github.io/" target="_blank">chehaka.github.io ↗</a></p>
+      <p>© 2026 Ari Hershowitz · <a href="mailto:arihershowitz@dreamproit.com">arihershowitz@dreamproit.com</a> ·
+        Powered by
+        GitHub Pages · Design inspired by <a href="https://chehaka.github.io/" target="_blank">chehaka.github.io ↗</a>
+      </p>
     </footer>
 
     <script>
@@ -2435,7 +2455,7 @@
 
       /* ── HERO TITLE WORD ANIMATION ── */
       const heroH1 = document.getElementById('hero-h1');
-      const heroText = "Ari Hershowitz — <em>Innovation Attorney</em> & Technologist.";
+      const heroText = "Ari Hershowitz — <em>Innovation Attorney</em> & <em>Technologist</em>.";
       const parts = heroText.split(/(<em>.*?<\/em>|\s)/);
       let delay = 0;
       parts.forEach(p => {
@@ -2547,10 +2567,10 @@
             let glow = 0;
             if (rep) { const f = (1 - md / 130) * 2.8, ang = Math.atan2(p.y - mouse.y, p.x - mouse.x); p.x += Math.cos(ang) * f; p.y += Math.sin(ang) * f; glow = 1 - md / 130; }
             ctx.beginPath(); ctx.arc(p.x, p.y, p.r + glow * 3, 0, Math.PI * 2);
-            ctx.fillStyle = p.green ? `rgba(100,200,140,${p.a + glow * .35})` : `rgba(211,63,36,${p.a + glow * .35})`;
+            ctx.fillStyle = p.green ? `rgba(100,200,140,${p.a + glow * .35})` : `rgba(96,165,250,${p.a + glow * .35})`;
             ctx.fill();
           });
-          if (mouse.x > 0) { particles.forEach(p => { const d = Math.hypot(p.x - mouse.x, p.y - mouse.y); if (d < 150) { ctx.beginPath(); ctx.moveTo(mouse.x, mouse.y); ctx.lineTo(p.x, p.y); ctx.strokeStyle = `rgba(211,63,36,${(1 - d / 150) * .16})`; ctx.lineWidth = .65; ctx.stroke(); } }); }
+          if (mouse.x > 0) { particles.forEach(p => { const d = Math.hypot(p.x - mouse.x, p.y - mouse.y); if (d < 150) { ctx.beginPath(); ctx.moveTo(mouse.x, mouse.y); ctx.lineTo(p.x, p.y); ctx.strokeStyle = `rgba(96,165,250,${(1 - d / 150) * .16})`; ctx.lineWidth = .65; ctx.stroke(); } }); }
           requestAnimationFrame(draw);
         }
         draw();
