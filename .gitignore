@@ -1,2 +1,4 @@
 .DS_Store
 assets/img/photo-options/
+__pycache__/
+*.py[cod]
