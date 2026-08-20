@@ -1,0 +1,31 @@
+name: Notify blog of About Me changes
+
+# Tells aih/blog to re-mirror this page into
+# https://blog.linkedlegislation.org/aboutme/ whenever it changes.
+#
+# Requires a repository secret BLOG_SYNC_TOKEN: a fine-grained personal access
+# token scoped to aih/blog with Contents: read and write.
+#
+# The blog also re-syncs on a daily schedule, so a missed dispatch delays the
+# mirror rather than breaking it.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "index.html"
+      - "assets/**"
+  workflow_dispatch: {}
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Dispatch aboutme-updated to aih/blog
+        env:
+          GH_TOKEN: ${{ secrets.BLOG_SYNC_TOKEN }}
+        run: |
+          gh api repos/aih/blog/dispatches \
+            --method POST \
+            --field event_type=aboutme-updated \
+            --field 'client_payload[sha]=${{ github.sha }}'
