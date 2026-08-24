@@ -1154,8 +1154,13 @@
       }
 
       /* PUBLICATIONS */
-      #publications {
+      #publications,
+      #press {
         padding: 5rem 0;
+      }
+
+      #press {
+        padding-top: 0;
       }
 
       .pub-filters {
@@ -1722,6 +1727,7 @@
         <li><a href="#experience">Experience</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#publications">Publications</a></li>
+        <li><a href="#press">Press</a></li>
         <li><a href="#contact">Contact</a></li>
         <li><a href="https://blog.linkedlegislation.org/" class="nav-external" target="_blank"
             rel="noopener">Blog<span class="ext-mark" aria-hidden="true">↗</span><span
@@ -1738,6 +1744,7 @@
       <a href="#experience" onclick="closeMob()">Experience</a>
       <a href="#projects" onclick="closeMob()">Projects</a>
       <a href="#publications" onclick="closeMob()">Publications</a>
+      <a href="#press" onclick="closeMob()">Press</a>
       <a href="#contact" onclick="closeMob()">Contact</a>
       <a href="https://blog.linkedlegislation.org/" class="nav-external" target="_blank" rel="noopener"
         onclick="closeMob()">Blog<span class="ext-mark" aria-hidden="true">↗</span><span class="sr-only">
@@ -2208,14 +2215,13 @@
         <div class="pub-filters">
           <button class="pub-filter-btn active" data-filter="all">All</button>
           <button class="pub-filter-btn" data-filter="legislative">Legislative &amp; AI</button>
-          <button class="pub-filter-btn" data-filter="press">Press</button>
           <button class="pub-filter-btn" data-filter="environment">Environment</button>
           <button class="pub-filter-btn" data-filter="biomedical">Biomedical Science</button>
         </div>
 
         <div class="pub-grid">
 
-          <!-- Pub 1: AI Guidelines for Parliaments Book -->
+          <!-- AI Guidelines for Parliaments Book -->
           <div class="pub-card" data-cat="legislative">
             <div class="pub-meta-row">
               <span class="pub-type">Book</span>
@@ -2244,7 +2250,7 @@
             </div>
           </div>
 
-          <!-- Pub 2: Executing US Bills into Law -->
+          <!-- Executing US Bills into Law -->
           <div class="pub-card" data-cat="legislative">
             <div class="pub-meta-row">
               <span class="pub-type">Book Chapter</span>
@@ -2263,50 +2269,7 @@
             </p>
           </div>
 
-          <!-- Pub 4a: CBS News Interview -->
-          <div class="pub-card" data-cat="press">
-            <div class="pub-meta-row">
-              <span class="pub-type">Press</span>
-              <span class="pub-date">Aug 2026</span>
-            </div>
-            <h3 class="pub-title">
-              <a href="https://www.cbsnews.com/video/ai-could-be-used-to-generate-bills-that-may-become-laws-here-are-the-concerns/"
-                target="_blank">
-                AI could be used to generate bills that may become laws ↗
-              </a>
-            </h3>
-            <div class="pub-authors">CBS News</div>
-            <p class="pub-desc">
-              Television interview on how AI drafting tools are entering the legislative process, and what it means when
-              machine-generated text becomes law.
-            </p>
-          </div>
-
-          <!-- Pub 4: Politico Press Coverage -->
-          <div class="pub-card" data-cat="press">
-            <div class="pub-meta-row">
-              <span class="pub-type">Press</span>
-              <span class="pub-date">Aug 2026</span>
-            </div>
-            <h3 class="pub-title">
-              <a href="https://www.politico.com/news/2026/08/17/ai-slop-lawmakers-congress-01008376"
-                target="_blank">
-                AI slop is coming for Congress ↗
-              </a>
-            </h3>
-            <div class="pub-authors">Politico</div>
-            <p class="pub-desc">
-              Quoted on the risks of AI-generated legislative drafts and the integration of technology tools into
-              congressional drafting processes, including work with comparative prints.
-            </p>
-            <blockquote class="pub-quote">
-              "AI-generated drafts can also incorrectly cite previous statutes — a guaranteed way of introducing
-              thousands of bugs into our legal system."
-              <cite>— Ari Hershowitz, quoted in Politico</cite>
-            </blockquote>
-          </div>
-
-          <!-- Pub 3: Comparative Prints Suite -->
+          <!-- Comparative Prints Suite -->
           <div class="pub-card" data-cat="legislative">
             <div class="pub-meta-row">
               <span class="pub-type">Book Chapter</span>
@@ -2326,7 +2289,7 @@
             </p>
           </div>
 
-          <!-- Pub 5: Belize Chalillo Dam -->
+          <!-- Belize Chalillo Dam -->
           <div class="pub-card" data-cat="environment">
             <div class="pub-meta-row">
               <span class="pub-type">Journal Article</span>
@@ -2345,7 +2308,7 @@
             </p>
           </div>
 
-          <!-- Pub 6: MCP-1 Gene Transduction -->
+          <!-- MCP-1 Gene Transduction -->
           <div class="pub-card" data-cat="biomedical">
             <div class="pub-meta-row">
               <span class="pub-type">Research Article</span>
@@ -2363,7 +2326,7 @@
             </p>
           </div>
 
-          <!-- Pub 7: Adenovirus-Mediated Gene-Transfer -->
+          <!-- Adenovirus-Mediated Gene-Transfer -->
           <div class="pub-card" data-cat="biomedical">
             <div class="pub-meta-row">
               <span class="pub-type">Research Article</span>
@@ -2378,6 +2341,233 @@
             <p class="pub-desc">
               Investigating viral transduction efficiency parameters for gene therapy applications targeting breast
               cancer cells. Published in <em>Cancer Gene Therapy</em>.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PRESS -->
+    <section id="press">
+      <div class="section-wrap">
+        <div class="eyebrow">Media Coverage &amp; Interviews</div>
+        <h2 class="s-heading">Press</h2>
+
+        <div class="pub-filters">
+          <button class="pub-filter-btn active" data-filter="all">All</button>
+          <button class="pub-filter-btn" data-filter="ai">AI &amp; Congress</button>
+          <button class="pub-filter-btn" data-filter="environment">Environment</button>
+        </div>
+
+        <div class="pub-grid">
+
+          <!-- CBS News interview -->
+          <div class="pub-card" data-cat="ai">
+            <div class="pub-meta-row">
+              <span class="pub-type">Interview</span>
+              <span class="pub-date">Aug 21, 2026</span>
+            </div>
+            <h3 class="pub-title">
+              <a href="https://www.cbsnews.com/video/ai-could-be-used-to-generate-bills-that-may-become-laws-here-are-the-concerns/"
+                target="_blank">
+                AI could be used to generate bills that may become laws ↗
+              </a>
+            </h3>
+            <div class="pub-authors">CBS News</div>
+            <p class="pub-desc">
+              Television interview on how AI drafting tools are entering the legislative process, and what it means when
+              machine-generated text becomes law.
+            </p>
+          </div>
+
+          <!-- The Next Web -->
+          <div class="pub-card" data-cat="ai">
+            <div class="pub-meta-row">
+              <span class="pub-type">Press</span>
+              <span class="pub-date">Aug 18, 2026</span>
+            </div>
+            <h3 class="pub-title">
+              <a href="https://thenextweb.com/news/ai-drafted-bills-house-legislative-counsel-swamped"
+                target="_blank">
+                AI-drafted bills take longer to fix than to write ↗
+              </a>
+            </h3>
+            <div class="pub-authors">The Next Web · Alina Maria Stan</div>
+            <p class="pub-desc">
+              Quoted on incorrect statutory references in machine-drafted bills, and on the Comparative Print Suite —
+              described as the first AI tool in the House, which returns an error rather than a guess when it cannot
+              place a change with confidence.
+            </p>
+          </div>
+
+          <!-- Raw Story -->
+          <div class="pub-card" data-cat="ai">
+            <div class="pub-meta-row">
+              <span class="pub-type">Press</span>
+              <span class="pub-date">Aug 17, 2026</span>
+            </div>
+            <h3 class="pub-title">
+              <a href="https://www.rawstory.com/congress-ai/"
+                target="_blank">
+                Insider warns Congress flooded with “absolutely terrifying” legislation written by AI ↗
+              </a>
+            </h3>
+            <div class="pub-authors">Raw Story</div>
+            <p class="pub-desc">
+              Coverage of AI-generated drafts reaching the House Office of the Legislative Counsel, citing the risk of
+              unchecked citation errors entering the statute books.
+            </p>
+          </div>
+
+          <!-- Politico -->
+          <div class="pub-card" data-cat="ai">
+            <div class="pub-meta-row">
+              <span class="pub-type">Press</span>
+              <span class="pub-date">Aug 17, 2026</span>
+            </div>
+            <h3 class="pub-title">
+              <a href="https://www.politico.com/news/2026/08/17/ai-slop-lawmakers-congress-01008376"
+                target="_blank">
+                AI slop is coming for Congress ↗
+              </a>
+            </h3>
+            <div class="pub-authors">Politico</div>
+            <p class="pub-desc">
+              Quoted on the risks of AI-generated legislative drafts and the integration of technology tools into
+              congressional drafting processes, including work with comparative prints.
+            </p>
+            <blockquote class="pub-quote">
+              "AI-generated drafts can also incorrectly cite previous statutes — a guaranteed way of introducing
+              thousands of bugs into our legal system."
+              <cite>— Ari Hershowitz, quoted in Politico</cite>
+            </blockquote>
+          </div>
+
+          <!-- San Francisco Chronicle -->
+          <div class="pub-card" data-cat="environment">
+            <div class="pub-meta-row">
+              <span class="pub-type">Press</span>
+              <span class="pub-date">Apr 22, 2007</span>
+            </div>
+            <h3 class="pub-title">
+              <a href="https://www.sfgate.com/green/article/The-mahogany-wars-of-Peru-s-rain-forests-2563897.php"
+                target="_blank">
+                The mahogany wars of Peru's rain forests ↗
+              </a>
+            </h3>
+            <div class="pub-authors">San Francisco Chronicle · C. J. Schexnayder</div>
+            <p class="pub-desc">
+              Quoted as director of NRDC's Latin American BioGems campaign on Goldman Prize winner Julio Cusurichi and
+              the isolated Amazonian groups whose territory illegal mahogany logging was reaching.
+            </p>
+          </div>
+
+          <!-- NZ Herald -->
+          <div class="pub-card" data-cat="environment">
+            <div class="pub-meta-row">
+              <span class="pub-type">Press</span>
+              <span class="pub-date">Jun 28, 2006</span>
+            </div>
+            <h3 class="pub-title">
+              <a href="https://www.nzherald.co.nz/world/untouched-tribes-under-threat-from-loggers/325D24VN2LEQ2PDRDLZI7VGTMM/"
+                target="_blank">
+                'Untouched' tribes under threat from loggers ↗
+              </a>
+            </h3>
+            <div class="pub-authors">The New Zealand Herald · Andrew Buncombe</div>
+            <p class="pub-desc">
+              Syndicated coverage of the NRDC campaign against Peruvian mahogany imports and the threat illegal logging
+              posed to uncontacted peoples in the Tahuamanu rainforest.
+            </p>
+          </div>
+
+          <!-- The Independent -->
+          <div class="pub-card" data-cat="environment">
+            <div class="pub-meta-row">
+              <span class="pub-type">Press</span>
+              <span class="pub-date">Jun 27, 2006</span>
+            </div>
+            <h3 class="pub-title">
+              <a href="https://www.independent.co.uk/news/world/americas/mahogany-imports-are-wiping-out-peru-tribes-6097040.html"
+                target="_blank">
+                Mahogany imports ‘are wiping out Peru tribes’ ↗
+              </a>
+            </h3>
+            <div class="pub-authors">The Independent · Andrew Buncombe</div>
+            <p class="pub-desc">
+              Quoted for NRDC on the U.S. market for Peruvian mahogany and its effect on indigenous communities in
+              southern Peru.
+            </p>
+            <blockquote class="pub-quote">
+              "Tens of thousands of tons of Peruvian mahogany are imported into the US for luxury dining room tables,
+              household trimmings and automobile dashboards. But Americans have no idea that buying mahogany
+              contributes to the destruction of the rainforest and threatens the people who live there. People are
+              dying — it is a crisis right now."
+              <cite>— Ari Hershowitz, quoted in The Independent</cite>
+            </blockquote>
+          </div>
+
+          <!-- Outside: Last Flight Out -->
+          <div class="pub-card" data-cat="environment">
+            <div class="pub-meta-row">
+              <span class="pub-type">Feature</span>
+              <span class="pub-date">May 2003</span>
+            </div>
+            <h3 class="pub-title">
+              <a href="https://www.outsideonline.com/adventure-travel/destinations/central-america/last-flight-out/"
+                target="_blank">
+                Last Flight Out ↗
+              </a>
+            </h3>
+            <div class="pub-authors">Outside · Bruce Barcott</div>
+            <p class="pub-desc">
+              Feature on the fight over the Chalillo dam in Belize's Macal River Valley, quoting Hershowitz as director
+              of NRDC's BioGems Project for Latin America on the Belize Supreme Court ruling that forced a public
+              hearing.
+            </p>
+          </div>
+
+          <!-- LA Times Magazine -->
+          <div class="pub-card" data-cat="environment">
+            <div class="pub-meta-row">
+              <span class="pub-type">Feature</span>
+              <span class="pub-date">Apr 29, 2001</span>
+            </div>
+            <h3 class="pub-title">
+              <a href="https://www.latimes.com/archives/la-xpm-2001-apr-29-tm-57154-story.html"
+                target="_blank">
+                The Footprint of a Whale ↗
+              </a>
+            </h3>
+            <div class="pub-authors">Los Angeles Times Magazine · Diana Marcum</div>
+            <p class="pub-desc">
+              Cover story on Laguna San Ignacio after the defeat of the Mitsubishi–ESSA saltworks, following
+              Hershowitz's work funding schoolrooms and whale-watching trips for lagoon communities.
+            </p>
+            <blockquote class="pub-quote">
+              "The people who will best protect the lagoon are the people who live here, and education is the most
+              powerful tool we can provide."
+              <cite>— Ari Hershowitz, quoted in the Los Angeles Times Magazine</cite>
+            </blockquote>
+          </div>
+
+          <!-- Outside: Leviathan's Lair -->
+          <div class="pub-card" data-cat="environment">
+            <div class="pub-meta-row">
+              <span class="pub-type">Feature</span>
+              <span class="pub-date">Jul 1999</span>
+            </div>
+            <h3 class="pub-title">
+              <a href="https://www.outsideonline.com/health/love-and-death-and-leviathans-lair/"
+                target="_blank">
+                Love and Death and the Leviathan's Lair ↗
+              </a>
+            </h3>
+            <div class="pub-authors">Outside · Bruce Barcott</div>
+            <p class="pub-desc">
+              Profile of Hershowitz as NRDC's man on the scene in San Ignacio, organizing local opposition to the
+              proposed saltworks on the last undeveloped gray whale nursing lagoon in Baja California.
             </p>
           </div>
 
@@ -2600,18 +2790,17 @@
         document.querySelectorAll('.cat-card, .exp-row, .proj-card, .pub-card, .edu-card, .fun-card, .skill-card').forEach(el => el.classList.add('vis'));
       }, 500);
 
-      /* ── PUBLICATION FILTERS ── */
-      document.querySelectorAll('.pub-filter-btn').forEach(btn => {
-        btn.addEventListener('click', () => {
-          document.querySelectorAll('.pub-filter-btn').forEach(b => b.classList.remove('active'));
-          btn.classList.add('active');
-          const f = btn.dataset.filter;
-          document.querySelectorAll('.pub-card').forEach(card => {
-            if (f === 'all' || card.dataset.cat === f) {
-              card.classList.remove('pub-hidden');
-            } else {
-              card.classList.add('pub-hidden');
-            }
+      /* ── PUBLICATION & PRESS FILTERS ── */
+      document.querySelectorAll('.pub-filters').forEach(group => {
+        const grid = group.parentElement.querySelector('.pub-grid');
+        group.querySelectorAll('.pub-filter-btn').forEach(btn => {
+          btn.addEventListener('click', () => {
+            group.querySelectorAll('.pub-filter-btn').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            const f = btn.dataset.filter;
+            grid.querySelectorAll('.pub-card').forEach(card => {
+              card.classList.toggle('pub-hidden', f !== 'all' && card.dataset.cat !== f);
+            });
           });
         });
       });
