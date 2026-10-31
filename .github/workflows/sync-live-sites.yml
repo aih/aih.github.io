@@ -1,0 +1,100 @@
+name: Sync live sites
+
+# Looks for new public repos of aih that have a homepage URL or GitHub Pages,
+# adds them to profile/projects.yaml, regenerates the "Live Sites" grid in
+# index.html, and opens a pull request on the auto/live-sites
+# branch for review.
+#
+# Uses the built-in GITHUB_TOKEN. Requires the repository setting
+# Settings → Actions → General → Workflow permissions →
+# "Allow GitHub Actions to create and approve pull requests".
+#
+# Also runs on pushes to main that change projects.yaml, so an edit made there
+# (for example in the GitHub web editor) comes back as a PR with index.html
+# re-rendered. While a PR from auto/live-sites is open, runs skip, so edits
+# pushed to that branch are not overwritten.
+
+on:
+  schedule:
+    - cron: "17 13 * * *" # daily, 13:17 UTC
+  workflow_dispatch: {}
+  push:
+    branches: [main]
+    paths:
+      - "profile/projects.yaml"
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: sync-live-sites
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Skip while a sync PR is open
+        id: open
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          pr=$(gh pr list --repo "$GITHUB_REPOSITORY" --head auto/live-sites --state open --json url --jq '.[0].url')
+          if [ -n "$pr" ]; then
+            echo "Open sync PR: $pr. Merge or close it first."
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - uses: actions/checkout@v4
+        if: steps.open.outputs.skip != 'true'
+
+      - uses: actions/setup-python@v5
+        if: steps.open.outputs.skip != 'true'
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        if: steps.open.outputs.skip != 'true'
+        run: pip install -r profile/scripts/requirements.txt
+
+      - name: Find new deployed repos and render index.html
+        if: steps.open.outputs.skip != 'true'
+        id: sync
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          GITHUB_OWNER: aih
+        run: python profile/scripts/sync_projects.py
+
+      - name: Open pull request
+        if: steps.open.outputs.skip != 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ADDED: ${{ steps.sync.outputs.added }}
+        run: |
+          if git diff --quiet -- index.html profile/projects.yaml; then
+            echo "No changes."
+            exit 0
+          fi
+          branch=auto/live-sites
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git checkout -B "$branch"
+          git add index.html profile/projects.yaml
+          if [ -n "$ADDED" ]; then
+            title="Add live sites: ${ADDED//,/, }"
+          else
+            title="Re-render Live Sites from projects.yaml"
+          fi
+          git commit -m "$title"
+          git push --force origin "$branch"
+          gh pr create --base main --head "$branch" --title "$title" --assignee aih --body "$(cat <<EOF
+          Opened by the **Sync live sites** workflow.
+
+          New repos: ${ADDED:-none}
+
+          Edit the new entries in \`profile/projects.yaml\` (title, tags, description), then run
+          \`python profile/scripts/sync_projects.py --render\` and push to this branch, or merge as is.
+          To exclude a repo, add its name under \`ignore:\` in \`profile/projects.yaml\` and close this PR.
+          EOF
+          )"

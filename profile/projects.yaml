@@ -1,0 +1,64 @@
+# projects.yaml
+# Deployed public repositories shown in the "Live Sites" grid of index.html
+# (between the BEGIN/END live-sites markers).
+#
+# profile/scripts/sync_projects.py regenerates that grid from this file, and
+# the "Sync live sites" workflow appends an entry here when a new public repo
+# of aih has a homepage URL or GitHub Pages. Edit descriptions and tags freely;
+# the script keeps existing entries as they are.
+#
+# Fields:
+#   repo         GitHub repo name under aih (used to detect new repos)
+#   title        Card title
+#   url          Live site
+#   org          Small label above the title
+#   tags         Up to three; the first is styled "hot", the second "green"
+#   description  One or two sentences
+#
+# ignore: repos the workflow should never add.
+# created_after: only repos created on or after this date are considered.
+
+created_after: "2026-10-31"
+
+ignore:
+  - aih.github.io
+  - aih
+
+projects:
+  - repo: uscode-redesign
+    title: U.S. Code, Versioned
+    url: https://uscode.linkedlegislation.org
+    org: linkedlegislation.org
+    tags: [U.S. Code, Legal XML, Search]
+    description: >-
+      A modern site to navigate and search the U.S. Code. Each section shows all
+      of its historical versions and the changes between them.
+
+  - repo: statutes-at-large
+    title: Statutes at Large
+    url: https://statutes.linkedlegislation.org
+    org: linkedlegislation.org
+    tags: [Public Laws, API, Legal XML]
+    description: >-
+      A comprehensive collection of U.S. laws, including the Compilations
+      maintained by the House Office of Legislative Counsel, with an API.
+
+  - repo: legislative-guidelines
+    title: Legislative Drafting Guidelines
+    url: https://legdraft.linkedlegislation.org
+    org: linkedlegislation.org
+    tags: [Drafting, Comparative Law, AI]
+    description: >-
+      97 legislative drafting manuals from 69 jurisdictions, converted to
+      searchable HTML, with a cross-jurisdiction comparison and a
+      compliance auditor that scores a draft bill against chosen guidelines.
+
+  - repo: reintroductions-us
+    title: Bill Reintroductions
+    url: https://reintro.linkedlegislation.org
+    org: linkedlegislation.org
+    tags: [Congress, USLM, Drafting]
+    description: >-
+      Prepares a bill from the last Congress for reintroduction in the next:
+      a USLM 2.0 XML and PDF draft with the new Congress and session, and
+      review notes on cited U.S. Code sections and Public Laws amended since.
