@@ -14,6 +14,9 @@ The website highlights professional experience, key achievements, research and p
 
 - [`index.html`](file:///Users/arihershowitz/Documents/workspace/aih/aih.github.io/index.html) — Main website markup and interactive components.
 - [`profile/profile.yaml`](file:///Users/arihershowitz/Documents/workspace/aih/aih.github.io/profile/profile.yaml) — Canonical data source for professional profile details.
+- `profile/projects.yaml` — Deployed projects shown in the Live Sites grid of `index.html`.
+- `profile/scripts/sync_projects.py` — Renders the Live Sites grid from `projects.yaml` (`--render`), and with no flag also adds new public repos of aih that have a homepage URL or GitHub Pages.
+- `.github/workflows/sync-live-sites.yml` — Runs `sync_projects.py` daily and opens a PR when it finds a new deployed repo.
 - `assets/` — Stylesheets, scripts, images, and static resources.
 
 ## 🚀 Local Development
