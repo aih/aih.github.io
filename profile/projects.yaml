@@ -62,3 +62,11 @@ projects:
       Prepares a bill from the last Congress for reintroduction in the next:
       a USLM 2.0 XML and PDF draft with the new Congress and session, and
       review notes on cited U.S. Code sections and Public Laws amended since.
+
+  - repo: "free-standing-law"
+    title: "Free Standing Law"
+    url: "https://freestand.linkedlegislation.org"
+    org: "freestand.linkedlegislation.org"
+    tags: ["HTML"]
+    description: >-
+      Analysis of provisions that don't get codified and provisions that are outdated, in error and probably should be repealed 
