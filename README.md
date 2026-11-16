@@ -1,6 +1,6 @@
 # Ari Hershowitz — Personal Website & Portfolio
 
-This repository contains the source code for the personal website and portfolio of **Ari Hershowitz** (AI & Innovation Leader for Legal Tech, Founder & CEO of DreamProIT).
+This repository contains the source code for the personal website and portfolio of **Ari Hershowitz** (AI & Innovation Leader for Legal Tech, Founder & CEO of Galexic).
 
 🌐 **Live Site:** [https://aih.github.io](https://aih.github.io)
 
