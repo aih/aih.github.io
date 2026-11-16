@@ -12,7 +12,7 @@ links:
   linkedin: https://linkedin.com/in/ari-hershowitz
   github: https://github.com/aih
   blog_legal_tech: https://blog.linkedlegislation.org
-  blog_dreamproit: https://dreamproit.com/blog
+  blog_galexic: https://blog.galexic.com
 
 # --- DRAFT: paste into LinkedIn "Headline" field (220 char limit) ---
 headline_draft: >-
@@ -22,14 +22,14 @@ headline_draft: >-
 about_draft: |-
   I help legal and government organizations modernize with AI, structured data, and modern software engineering. 
 
-  As founder of DreamProIT, I direct a US/Ukrainian engineering team delivering full-stack, cloud, and AI-driven software for legal, civic tech, and enterprise clients. As a longtime innovation lead in legal technology, I helped the U.S. House Office of the Clerk, House Office of Legislative Counsel, Law Revision Counsel, and GPO introduce XML-based legislative drafting and automated document comparison — including a U.S. patent (20190354636) for comparing hierarchical legislative texts, and work recognized by the House Select Committee on the Modernization of Congress.
+  As founder of Galexic, I direct a US/Ukrainian engineering team delivering full-stack, cloud, and AI-driven software for legal, civic tech, and enterprise clients. As a longtime innovation lead in legal technology, I helped the U.S. House Office of the Clerk, House Office of Legislative Counsel, Law Revision Counsel, and GPO introduce XML-based legislative drafting and automated document comparison — including a U.S. patent (20190354636) for comparing hierarchical legislative texts, and work recognized by the House Select Committee on the Modernization of Congress.
 
   I write and speak on AI in legislatures and parliaments (co-author, Guidelines for AI in Parliaments), and teach lawyers, legislators, and other professionals the fundamentals of AI — how LLMs work, what they do well, and where they fail. I'm always glad to connect with people working on legal tech, GovTech, AI policy, or building engineering teams with Ukraine.
 
-Reach out: arihershowitz@dreamproit.com
+Reach out: ari@galexic.com
 
 experience:
-  - company: DreamProIT / MriiaPro
+  - company: Galexic
     role: CEO and Director of Engineering
     start: "2022-03"
     end: present
@@ -39,8 +39,8 @@ experience:
       - Direct distributed development teams on civic tech, law, and enterprise projects.
       - Modernizing legal and legislative data analysis tools for local, state, federal, and international bodies.
     links:
-      - { label: "DreamProIT", url: "https://dreamproit.com/" }
-      - { label: "Blog", url: "https://dreamproit.com/blog" }
+      - { label: "Galexic", url: "https://galexic.com/" }
+      - { label: "Blog", url: "https://blog.galexic.com" }
       - {
           label: "Patent 20190354636",
           url: "https://uspto.report/patent/app/20190354636",
